@@ -2,32 +2,20 @@ import styled from "styled-components"
 // Images
 import logo from "../static/images/logo.png"
 
-const Nav = () => {
+const Footer = () => {
     return (
-        <StyledNav>
+        <StyledFooter>
             <ul>
                 <li>
-                    <img src={logo}></img>
-                </li>
-                <li>
-                    <a>Home</a>
-                </li>
-                <li>
-                    <a>Images</a>
-                </li>
-                <li>
-                    <a>Checklist</a>
-                </li>
-                <li>
-                    <a>Resources</a>
+                    <img></img>
                 </li>
             </ul>
-        </StyledNav>
+        </StyledFooter>
         
     );
 };
 
-const StyledNav = styled.nav `
+const StyledFooter = styled.footer `
     ul{
         display: flex;
         background-color: white;
