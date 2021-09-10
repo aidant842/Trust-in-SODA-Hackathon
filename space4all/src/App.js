@@ -13,6 +13,7 @@ import Footer from "./components/Footer";
 
 // Router
 import { useLocation, Switch, Route } from "react-router-dom";
+import Container from "./components/UI/Container";
 
 function App() {
     //Variables
@@ -21,21 +22,23 @@ function App() {
         <div className="App">
             <GlobalStyle />
             <Nav />
-            <Switch location={location} key={location.pathname}>
-                {/* Add exact otherwise other urls that begin with a / will be rendered on that page */}
-                <Route path="/" exact>
-                    <Page1 />
-                </Route>
-                <Route path="/images" exact>
-                    <Page2 />
-                </Route>
-                <Route path="/checklist">
-                    <Page3 />
-                </Route>
-                <Route path="/resources" exact>
-                    <Page4 />
-                </Route>
-            </Switch>
+            <Container>
+                <Switch location={location} key={location.pathname}>
+                    {/* Add exact otherwise other urls that begin with a / will be rendered on that page */}
+                    <Route path="/" exact>
+                        <Page1 />
+                    </Route>
+                    <Route path="/images" exact>
+                        <Page2 />
+                    </Route>
+                    <Route path="/checklist">
+                        <Page3 />
+                    </Route>
+                    <Route path="/resources" exact>
+                        <Page4 />
+                    </Route>
+                </Switch>
+            </Container>
             <Footer />
         </div>
     );
