@@ -1,10 +1,12 @@
 import React from "react";
 // Components
-
+import Container from "../components/UI/Container";
 const Page2 = () => {
     return (
         <>
-            <p>Page 2</p>
+            <Container>
+                <p>Page 2</p>
+            </Container>
         </>
     );
 };
