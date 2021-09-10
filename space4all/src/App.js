@@ -10,7 +10,6 @@ function App() {
         <div className="App">
             <GlobalStyle />
             <Nav />
-            
         </div>
     );
 }

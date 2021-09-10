@@ -1,5 +1,5 @@
 import styled from "styled-components"
-// Images
+//Images
 import logo from "../static/images/logo.png"
 
 const Nav = () => {
@@ -7,23 +7,22 @@ const Nav = () => {
         <StyledNav>
             <ul>
                 <li>
-                    <img src={logo}></img>
+                    <a href="#"><img src={logo}></img></a>
                 </li>
                 <li>
-                    <a>Home</a>
+                    <a href="#">Home</a>
                 </li>
                 <li>
-                    <a>Images</a>
+                    <a href="#">Images</a>
                 </li>
                 <li>
-                    <a>Checklist</a>
+                    <a href="#">Checklist</a>
                 </li>
                 <li>
-                    <a>Resources</a>
+                    <a href="#">Resources</a>
                 </li>
             </ul>
         </StyledNav>
-        
     );
 };
 
@@ -35,23 +34,21 @@ const StyledNav = styled.nav `
         list-style: none;
         li {
             margin: auto;
-            img {
+            img{
                 height: 50px;
                 width: 50px;
             }
             a{
-            cursor: pointer;
-            color: var(--blue);
-            /* text-shadow: 0 0 2px var(--d-blueish); */
-            text-decoration: unset;
-            :hover{
-                font-size: 1.2rem;
-                color: var(--red);
+                cursor: pointer;
+                color: var(--blue);
+                /* text-shadow: 0 0 2px var(--d-blueish); */
+                text-decoration: unset;
+                :hover{
+                    font-size: 1.2rem;
+                    color: var(--red);
+                }
             }
         }
-        }
-        
     }
-    
 `
 export default Nav;

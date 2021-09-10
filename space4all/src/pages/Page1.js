@@ -4,10 +4,9 @@ import Nav from "../components/Nav";
 
 const Page1 = () => {
     return (
-        <div>
+        <>
             <Nav />
-        </div>
-        
+        </>
     );
 };
 

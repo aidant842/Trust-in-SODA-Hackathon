@@ -23,7 +23,7 @@ const StyledFooter = styled.footer `
         list-style: none;
         li {
             margin: auto;
-            img {
+            img{
                 height: 50px;
                 width: 50px;
             }
