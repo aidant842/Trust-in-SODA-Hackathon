@@ -1,9 +1,13 @@
 import React from "react";
-
-//Components
+// Components
+import Nav from "../components/Nav";
 
 const Page1 = () => {
-    return <div></div>;
+    return (
+        <>
+            <Nav />
+        </>
+    );
 };
 
 export default Page1;
