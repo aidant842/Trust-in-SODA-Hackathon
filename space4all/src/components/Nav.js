@@ -32,6 +32,7 @@ const StyledNav = styled.nav `
         background-color: white;
         box-shadow: 0 0 5px black;
         list-style: none;
+        margin-bottom: 1rem;
         li {
             margin: auto;
             img{
