@@ -1,13 +1,12 @@
 import React from "react";
-
-//Components
-import SayHi from "../components/SayHi";
+// Components
+import Nav from "../components/Nav";
 
 const Page1 = () => {
     return (
-        <div>
-            <SayHi />
-        </div>
+        <>
+            <Nav />
+        </>
     );
 };
 
