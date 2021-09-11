@@ -8,10 +8,10 @@ import TextBlockWithHeader from "../components/TextBlockWithHeader";
 import Image from "../components/Image";
 import SplitContainer from "../components/UI/SplitContainer";
 import HR from "../components/UI/HR";
+import ImageWithHeader from "../components/ImageWithHeader";
 
 //Images
 import logo from "../static/images/logo.png";
-import ImageWithHeader from "../components/ImageWithHeader";
 const Page2 = () => {
     return (
         <>
