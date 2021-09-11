@@ -59,8 +59,8 @@ const MobileNav = () => {
                                         style={{
                                             color:
                                                 pathname === item.to
-                                                    ? red
-                                                    : blue,
+                                                    ? "#b8d8be"
+                                                    : "#62a3d1",
                                         }}
                                         onClick={openMenuHandler}
                                     >
