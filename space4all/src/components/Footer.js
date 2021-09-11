@@ -1,7 +1,7 @@
 import styled from "styled-components";
 // Images
 import logoTitle from "../static/images/logo-title.png";
-// Fontawesom
+// Fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 
@@ -10,29 +10,63 @@ const Footer = () => {
         <StyledFooter>
             <ul>
                 <li>
-                    <img src={logoTitle}></img>
+                    <img src={logoTitle} alt="Space4Ever Logo"></img>
                 </li>
                 <li className="footerIcon">
-                    <a href="">
+                    <a
+                        href="https://github.com/aidant842/Trust-in-SODA-Hackathon"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                    >
                         <FontAwesomeIcon icon={faGithubSquare} />
                     </a>
                 </li>
                 <li>
                     <ul className="footerLinkedIn">
                         <li>
-                            <a href="">Aidan</a>
+                            <a
+                                href="https://www.linkedin.com/in/aidan-thorpe-99a8451a5/"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
+                                Aidan
+                            </a>
                         </li>
                         <li>
-                            <a href="">Allana</a>
+                            <a
+                                href=""
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
+                                Allana
+                            </a>
                         </li>
                         <li>
-                            <a href="">Aoife</a>
+                            <a
+                                href=""
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
+                                Aoife
+                            </a>
                         </li>
                         <li>
-                            <a href="">Andrius</a>
+                            <a
+                                href=""
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
+                                Andrius
+                            </a>
                         </li>
                         <li>
-                            <a href="">John</a>
+                            <a
+                                href=""
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
+                                John
+                            </a>
                         </li>
                     </ul>
                 </li>

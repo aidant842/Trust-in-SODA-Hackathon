@@ -6,7 +6,7 @@ import styled from "styled-components";
 const ImageWithHeader = (props) => {
     const { imageSrc, altText, height, width, heading, text } = props;
     return (
-        <ImageContainer>
+        <StyledImageContainer>
             <h4>{heading}</h4>
             <StyledImage
                 src={imageSrc}
@@ -15,11 +15,11 @@ const ImageWithHeader = (props) => {
                 width={width}
             />
             <p>{text}</p>
-        </ImageContainer>
+        </StyledImageContainer>
     );
 };
 
-const ImageContainer = styled.div`
+const StyledImageContainer = styled.div`
     width: 100%;
     justify-content: center;
 `;

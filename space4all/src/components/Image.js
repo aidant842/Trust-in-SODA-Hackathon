@@ -6,18 +6,18 @@ import styled from "styled-components";
 const Image = (props) => {
     const { imageSrc, altText, height, width } = props;
     return (
-        <ImageContainer>
+        <StyledImageContainer>
             <StyledImage
                 src={imageSrc}
                 alt={altText}
                 height={height}
                 width={width}
             />
-        </ImageContainer>
+        </StyledImageContainer>
     );
 };
 
-const ImageContainer = styled.div`
+const StyledImageContainer = styled.div`
     width: 100%;
     justify-content: center;
 `;

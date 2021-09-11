@@ -4,10 +4,10 @@ import React from "react";
 import styled from "styled-components";
 
 const HR = () => {
-    return <HrEl></HrEl>;
+    return <StyledHr></StyledHr>;
 };
 
-const HrEl = styled.div`
+const StyledHr = styled.div`
     background-color: var(--d-blueish);
     height: 2px;
     width: 20%;

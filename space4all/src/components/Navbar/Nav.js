@@ -87,20 +87,6 @@ const StyledNav = styled.nav`
     }
     @media (max-width: 1300px) {
         display: none;
-        /* flex-direction: column;
-        padding: 2rem 1rem;
-        #logo {
-            display: inline-block;
-            margin: 1rem;
-        }
-        ul {
-            padding: 2rem;
-            justify-content: space-around;
-            width: 100%;
-            li {
-                padding: 0;
-            }
-        } */
     }
 `;
 

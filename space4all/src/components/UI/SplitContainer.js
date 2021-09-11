@@ -4,10 +4,10 @@ import React from "react";
 import styled from "styled-components";
 
 const SplitContainer = ({ children }) => {
-    return <HalfWidth>{children}</HalfWidth>;
+    return <StyledHalfWidth>{children}</StyledHalfWidth>;
 };
 
-const HalfWidth = styled.div`
+const StyledHalfWidth = styled.div`
     display: flex;
     margin: 2rem 0 2rem 0;
 `;
