@@ -1,15 +1,30 @@
 import React from "react";
+//Styled Components
+import styled from "styled-components";
+
 // Components
-import Container from "../components/UI/Container";
+import TextBlockWithHeader from "../components/TextBlockWithHeader";
+import Image from "../components/Image";
+import HR from "../components/UI/HR";
+import Checklist from "../components/Checklist/Checklist";
+
+//Images
+import logo from "../static/images/logo.png";
 
 const Page3 = () => {
     return (
         <>
-            <Container>
-                <p>Page 3</p>
-            </Container>
+            <TextWithHeader heading="Heading 1" text="Paragraph 1" />
+            <Image imageSrc={logo} altText="Logo" height="auto" width="100%" />
+            <HR />
+            <TextWithHeader heading="Heading 2" text="Paragraph 2" />
+            <Checklist />
         </>
     );
 };
 
+const TextWithHeader = styled(TextBlockWithHeader)`
+    text-align: center;
+    width: 100%;
+`;
 export default Page3;
