@@ -2,7 +2,7 @@ import { useState } from "react";
 // Styled Components
 import styled from "styled-components";
 //Images
-import logo from "../../static/images/logo-title.png";
+import logo from "../../static/images/space4AllBanner.png";
 // Router
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
@@ -152,7 +152,7 @@ const StyledNav = styled.nav`
         display: flex;
     }
     @media (max-width: 460px) {
-        #logo{
+        #logo {
             top: 20%;
             left: 10%;
             height: 50px;
