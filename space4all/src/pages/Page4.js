@@ -21,9 +21,9 @@ const Page4 = () => {
         <HR / >
         <TextWithHeader heading = "Heading 1"
         text = "paragraph 1" / >
-        {Products.map((product) => {
+        {Products.map((product, index) => {
             return (
-                <ProductCard url={product.url} imageSrc={product.imageSrc} altText={product.altText} imgWidth={product.imgWidth} imgHeight={product.imgHeight} heading={product.heading} text={product.text} />
+                <ProductCard key={index} url={product.url} imageSrc={product.imageSrc} altText={product.altText} imgWidth={product.imgWidth} imgHeight={product.imgHeight} heading={product.heading} text={product.text} />
             )
         })}
         </>
