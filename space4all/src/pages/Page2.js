@@ -12,28 +12,38 @@ import ImageWithHeader from "../components/ImageWithHeader";
 
 //Images
 import logo from "../static/images/logo.png";
+import poor from "../static/images/poor.png";
+import good from "../static/images/good.png";
+import narrowVs from "../static/images/narrowVs.png";
+import wideVs from "../static/images/wideVs.png";
+
+//Custom Hooks
+import useWindowDimensions from "../Hooks/useWindowDimenstions";
+
 const Page2 = () => {
+    const { width } = useWindowDimensions();
+
     return (
         <>
             <h2>Heading</h2>
             <SplitContainer>
                 <Image
-                    imageSrc={logo}
+                    imageSrc={good}
                     altText="Logo"
-                    height="50px"
-                    width="50px"
+                    height="auto"
+                    width={width >= 1300 ? "65%" : "35%"}
                 />
                 <Image
-                    imageSrc={logo}
+                    imageSrc={narrowVs}
                     altText="Logo"
-                    height="50px"
-                    width="50px"
+                    height="auto"
+                    width={width >= 1300 ? "65%" : "35%"}
                 />
                 <Image
-                    imageSrc={logo}
+                    imageSrc={poor}
                     altText="Logo"
-                    height="50px"
-                    width="50px"
+                    height="auto"
+                    width={width >= 1300 ? "65%" : "35%"}
                 />
             </SplitContainer>
             <HR />
@@ -77,5 +87,12 @@ const TextWithHeader = styled(TextBlockWithHeader)`
     text-align: center;
     width: 100%;
 `;
+
+/* const StyledSplitContainer = styled(SplitContainer)`
+    display: flex !important;
+    @media (max-wdith: 700px) {
+        display: block !important;
+    }
+`; */
 
 export default Page2;
