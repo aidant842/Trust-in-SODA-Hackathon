@@ -137,8 +137,8 @@ const StyledNav = styled.nav`
         position: absolute;
         top: 8%;
         left: 10%;
-        height: 75px;
-        width: 275px;
+        height: 70px;
+        width: 300px;
     }
     .navButton {
         position: absolute;
@@ -150,6 +150,14 @@ const StyledNav = styled.nav`
     }
     @media (max-width: 1300px) {
         display: flex;
+    }
+    @media (max-width: 460px) {
+        #logo{
+            top: 20%;
+            left: 10%;
+            height: 50px;
+            width: 200px;
+        }
     }
 `;
 
