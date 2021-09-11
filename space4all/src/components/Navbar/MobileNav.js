@@ -2,7 +2,7 @@ import { useState } from "react";
 // Styled Components
 import styled from "styled-components";
 //Images
-import logo from "../../static/images/logo.png";
+import logo from "../../static/images/logo-title.png";
 // Router
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
@@ -16,8 +16,9 @@ import { GiHamburgerMenu } from "react-icons/gi";
 const MobileNav = () => {
     const { pathname } = useLocation();
     // variables
-    const red = "#e03f42";
+    const green = "#BDD9C0";
     const blue = "#62a3d1";
+    const dblueish = "#2a4147";
 
     const [open, setOpen] = useState(false);
 
@@ -40,7 +41,7 @@ const MobileNav = () => {
                     <motion.ul
                         variants={{
                             a: { width: "0%" },
-                            b: { width: "50%" },
+                            b: { width: "100%" },
                         }}
                         initial={{ height: 0, opacity: 0 }}
                         animate={{ height: 500, opacity: 1 }}
@@ -59,8 +60,8 @@ const MobileNav = () => {
                                         style={{
                                             color:
                                                 pathname === item.to
-                                                    ? "#b8d8be"
-                                                    : "#62a3d1",
+                                                    ? green
+                                                    : blue,
                                         }}
                                         onClick={openMenuHandler}
                                     >
@@ -72,7 +73,7 @@ const MobileNav = () => {
                                         animate={{
                                             width:
                                                 pathname === item.to
-                                                    ? "50%"
+                                                    ? "100%"
                                                     : "0%",
                                         }}
                                     />
@@ -92,16 +93,17 @@ const StyledNav = styled.nav`
     margin-bottom: 1rem;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: var(--green);
     box-shadow: 0 0 5px black;
     position: sticky;
     top: 0;
     z-index: 100;
     a {
         color: var(--blue);
+        text-shadow: black 0px 0px 5px;
         text-decoration: none;
         :hover {
-            color: var(--red) !important;
+            color: var(--green) !important;
         }
     }
 
@@ -109,16 +111,24 @@ const StyledNav = styled.nav`
         display: flex;
         flex-direction: column;
         list-style: none;
-        height: 500px;
+        height: 300px;
         position: absolute;
         top: 81.5px;
         width: 100%;
+        border: 15px double #b1e4b8;
+        box-shadow: 0 0 5px black;
         background-color: var(--d-blueish);
         justify-content: center;
         align-items: center;
     }
 
     li {
+        font-size: 1.3rem;
+        letter-spacing: 1.5px;
+        font-weight: 700;
+        width: 50%;
+        margin: auto;
+        text-align: center;
         position: relative;
         padding: 1rem 0;
     }
@@ -127,26 +137,34 @@ const StyledNav = styled.nav`
         position: absolute;
         top: 8%;
         left: 10%;
-        height: 75px;
-        width: 75px;
+        height: 70px;
+        width: 300px;
     }
     .navButton {
         position: absolute;
         right: 10%;
         font-size: 2rem;
-        color: var(--blue);
+        color: var(--d-blueish);
         z-index: 5;
         cursor: pointer;
     }
     @media (max-width: 1300px) {
         display: flex;
     }
+    @media (max-width: 460px) {
+        #logo{
+            top: 20%;
+            left: 10%;
+            height: 50px;
+            width: 200px;
+        }
+    }
 `;
 
 const Line = styled(motion.div)`
     position: absolute;
     height: 0.3rem;
-    background-color: var(--red);
+    background-color: var(--green);
     width: 0%;
     bottom: 1%;
     left: 65%;

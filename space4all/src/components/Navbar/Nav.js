@@ -9,13 +9,15 @@ import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 //nav links
 import { MenuItems } from "./MenuItems";
+import { GiGreenPower } from "react-icons/gi";
 
 const Nav = () => {
     const { pathname } = useLocation();
     // variables
 
-    const red = "#e03f42";
-    const blue = "#62a3d1";
+    const green = "#BDD9C0";
+    const blue = "#507c8d";
+    const dblueish = "#2a4147";
 
     return (
         <StyledNav>
@@ -31,7 +33,7 @@ const Nav = () => {
                             <Link
                                 to={item.to}
                                 style={{
-                                    color: pathname === item.to ? red : blue,
+                                    color: pathname === item.to ? dblueish : blue,
                                 }}
                             >
                                 {item.title}
@@ -40,7 +42,7 @@ const Nav = () => {
                                 transition={{ duration: 0.75 }}
                                 initial={{ width: "0%" }}
                                 animate={{
-                                    width: pathname === item.to ? "50%" : "0%",
+                                    width: pathname === item.to ? "75%" : "0%",
                                 }}
                             />
                         </li>
@@ -58,16 +60,18 @@ const StyledNav = styled.nav`
     justify-content: space-between;
     align-items: center;
     padding: 1rem 10rem;
-    background-color: white;
+    background-color: var(--green);
     box-shadow: 0 0 5px black;
     position: sticky;
     top: 0;
     z-index: 100;
     a {
-        color: var(--blue);
+        text-shadow: white 0px 0px 5px;
+        font-size: 1.2rem;
+        font-weight: 700;
         text-decoration: none;
         :hover {
-            color: var(--red) !important;
+            color: var(--d-blueish) !important;
         }
     }
 
@@ -82,6 +86,8 @@ const StyledNav = styled.nav`
     }
 
     li {
+        width: 240px;
+        text-align: end;
         padding-left: 10rem;
         position: relative;
     }
@@ -96,7 +102,7 @@ const Line = styled(motion.div)`
     width: 0%;
     position: absolute;
     bottom: -60%;
-    left: 65%;
+    left: 50%;
     @media (max-width: 1300px) {
         left: 0%;
     }
