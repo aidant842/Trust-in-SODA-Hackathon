@@ -9,6 +9,9 @@ import HR from "../components/UI/HR";
 
 //Images
 import logo from "../static/images/logo.png";
+import diversity from "../static/images/diversity.png";
+import equality from "../static/images/equality.png";
+import inclusion from "../static/images/inclusion.png";
 
 const Page1 = () => {
     return (
