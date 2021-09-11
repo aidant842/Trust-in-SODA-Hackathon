@@ -76,10 +76,10 @@ const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-    .footerIcon {
-        font-size: 32px;
+    .footerIcon a{
+        font-size: 3rem;
         :hover {
-            font-size: 2.3rem;
+            font-size: 3.2rem;
         }
     }
     .footerLinkedIn {
@@ -94,7 +94,7 @@ const StyledFooter = styled.footer`
     }
     ul {
         display: flex;
-        background-color: white;
+        background-color: var(--green);
         box-shadow: 0 0 5px black;
         list-style: none;
         margin-top: 1rem;
@@ -102,16 +102,21 @@ const StyledFooter = styled.footer`
         li {
             margin: auto;
             img {
+                margin-top: 2px;
                 height: 4rem;
                 width: 16rem;
             }
             a {
                 cursor: pointer;
-                color: var(--blue);
-                margin: 5px;
+                color: #507c8d;
+                margin: 5px 10px;
                 text-decoration: unset;
+                font-size: 1.3rem;
+                font-weight: 400;
+                letter-spacing: 1px;
+                text-shadow: 0 0 5px white;
                 :hover {
-                    color: var(--green);
+                    color: var(--d-blueish);
                 }
             }
         }
