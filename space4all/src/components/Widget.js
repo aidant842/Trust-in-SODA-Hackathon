@@ -26,6 +26,7 @@ const StyledWidget = styled.button`
     top: 113.5px;
     z-index: 10;
     border: none;
+    cursor: pointer;
     @media (max-width: 1300px) {
         top: 81.5px;
     }
