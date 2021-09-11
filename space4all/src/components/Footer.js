@@ -43,7 +43,7 @@ const Footer = () => {
                         </li>
                         <li>
                             <a
-                                href=""
+                                href="https://www.linkedin.com/in/aoifeobsmith/"
                                 target="_blank"
                                 rel="noreferrer noopener"
                             >
@@ -61,7 +61,7 @@ const Footer = () => {
                         </li>
                         <li>
                             <a
-                                href=""
+                                href="https://www.linkedin.com/in/john-doyle-ab717a95/"
                                 target="_blank"
                                 rel="noreferrer noopener"
                             >

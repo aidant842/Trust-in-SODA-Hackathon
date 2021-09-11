@@ -2,7 +2,7 @@ import { useState } from "react";
 // Styled Components
 import styled from "styled-components";
 //Images
-import logo from "../../static/images/logo.png";
+import logo from "../../static/images/logo-title.png";
 // Router
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
@@ -18,6 +18,7 @@ const MobileNav = () => {
     // variables
     const green = "#BDD9C0";
     const blue = "#62a3d1";
+    const dblueish = "#2a4147";
 
     const [open, setOpen] = useState(false);
 
@@ -92,13 +93,14 @@ const StyledNav = styled.nav`
     margin-bottom: 1rem;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: var(--green);
     box-shadow: 0 0 5px black;
     position: sticky;
     top: 0;
     z-index: 100;
     a {
         color: var(--blue);
+        text-shadow: black 0px 0px 5px;
         text-decoration: none;
         :hover {
             color: var(--green) !important;
@@ -113,6 +115,8 @@ const StyledNav = styled.nav`
         position: absolute;
         top: 81.5px;
         width: 100%;
+        border: 15px double #b1e4b8;
+        box-shadow: 0 0 5px black;
         background-color: var(--d-blueish);
         justify-content: center;
         align-items: center;
@@ -134,13 +138,13 @@ const StyledNav = styled.nav`
         top: 8%;
         left: 10%;
         height: 75px;
-        width: 75px;
+        width: 275px;
     }
     .navButton {
         position: absolute;
         right: 10%;
         font-size: 2rem;
-        color: var(--blue);
+        color: var(--d-blueish);
         z-index: 5;
         cursor: pointer;
     }

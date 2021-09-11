@@ -35,6 +35,16 @@ const StyledTextWithHeader = styled(TextBlockWithHeader)`
 const StyledCard = styled.div`
     width: 100%;
     max-height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease-in-out 25ms;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    &:hover {
+        transform: scale(1.02);
+    }
 `;
 
 export default ProductCard;
