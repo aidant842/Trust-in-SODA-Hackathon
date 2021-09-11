@@ -27,8 +27,6 @@ function App() {
         <div className="App">
             <GlobalStyle />
             {width >= 1300 ? <Nav /> : <MobileNav />}
-            {/* <Nav />
-            <MobileNav /> */}
             <Container>
                 <Switch location={location} key={location.pathname}>
                     {/* Add exact otherwise other urls that begin with a / will be rendered on that page */}

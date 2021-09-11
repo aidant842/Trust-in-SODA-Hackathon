@@ -1,28 +1,33 @@
-import React from 'react'
+import React from "react";
 // Components
-import Image from '../Image'
-import TextBlockWithHeader from '../TextBlockWithHeader'
-import SplitContainer from '../UI/SplitContainer'
+import Image from "../Image";
+import TextBlockWithHeader from "../TextBlockWithHeader";
+import SplitContainer from "../UI/SplitContainer";
 
 // Styled Components
 import styled from "styled-components";
 
 const ProductCard = (props) => {
-    const {url, imageSrc, altText, imgWidth, imgHeight, heading, text} = props
+    const { url, imageSrc, altText, imgWidth, imgHeight, heading, text } =
+        props;
     return (
         <StyledCard>
-            <a href={url} target="_blank">
-        <SplitContainer>
-           <Image imageSrc={imageSrc} altText={altText} width={imgWidth} height={imgHeight} />
-           <TextWithHeader heading={heading} text={text} />
-        </SplitContainer>
+            <a href={url} target="_blank" rel="noreferrer">
+                <SplitContainer>
+                    <Image
+                        imageSrc={imageSrc}
+                        altText={altText}
+                        width={imgWidth}
+                        height={imgHeight}
+                    />
+                    <StyledTextWithHeader heading={heading} text={text} />
+                </SplitContainer>
             </a>
         </StyledCard>
-    )
-}
+    );
+};
 
-
-const TextWithHeader = styled(TextBlockWithHeader)`
+const StyledTextWithHeader = styled(TextBlockWithHeader)`
     text-align: center;
     width: 100%;
 `;
