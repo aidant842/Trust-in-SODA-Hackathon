@@ -1,6 +1,6 @@
 import styled from "styled-components";
 // Images
-import logoTitle from "../static/images/logo-title.png";
+import logoTitle from "../static/images/space4AllBanner.png";
 // Fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
@@ -34,7 +34,7 @@ const Footer = () => {
                         </li>
                         <li>
                             <a
-                                href=""
+                                href="https://www.linkedin.com/in/allana-bailey-19b8a792"
                                 target="_blank"
                                 rel="noreferrer noopener"
                             >
@@ -76,7 +76,7 @@ const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-    .footerIcon a{
+    .footerIcon a {
         font-size: 3rem;
         :hover {
             font-size: 3.2rem;

@@ -13,7 +13,11 @@ import diversity from "../static/images/diversity.png";
 import equality from "../static/images/equality.png";
 import inclusion from "../static/images/inclusion.png";
 
+//Custom Hooks
+import useWindowDimensions from "../Hooks/useWindowDimenstions";
+
 const Page1 = () => {
+    const { width } = useWindowDimensions();
     return (
         <>
             <SplitContainer>
@@ -28,7 +32,9 @@ const Page1 = () => {
                     width="50px"
                 />
             </SplitContainer>
+
             <HR />
+
             <SplitContainer>
                 <Image
                     imageSrc={logo}
@@ -41,25 +47,27 @@ const Page1 = () => {
                     text="Second Paragraph"
                 />
             </SplitContainer>
+
             <HR />
+
             <SplitContainer>
                 <Image
-                    imageSrc={logo}
+                    imageSrc={diversity}
                     altText="Logo"
-                    height="50px"
-                    width="50px"
+                    height="auto"
+                    width={width >= 1300 ? "100%" : "75%"}
                 />
                 <Image
-                    imageSrc={logo}
+                    imageSrc={inclusion}
                     altText="Logo"
-                    height="50px"
-                    width="50px"
+                    height="auto"
+                    width={width >= 1300 ? "100%" : "75%"}
                 />
                 <Image
-                    imageSrc={logo}
+                    imageSrc={equality}
                     altText="Logo"
-                    height="50px"
-                    width="50px"
+                    height="auto"
+                    width={width >= 1300 ? "100%" : "75%"}
                 />
             </SplitContainer>
             <HR />
