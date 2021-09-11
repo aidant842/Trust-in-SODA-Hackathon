@@ -9,12 +9,13 @@ import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 //nav links
 import { MenuItems } from "./MenuItems";
+import { GiGreenPower } from "react-icons/gi";
 
 const Nav = () => {
     const { pathname } = useLocation();
     // variables
 
-    const red = "#e03f42";
+    const green = "#BDD9C0";
     const blue = "#62a3d1";
 
     return (
@@ -31,7 +32,7 @@ const Nav = () => {
                             <Link
                                 to={item.to}
                                 style={{
-                                    color: pathname === item.to ? red : blue,
+                                    color: pathname === item.to ? GiGreenPower : blue,
                                 }}
                             >
                                 {item.title}
@@ -67,7 +68,7 @@ const StyledNav = styled.nav`
         color: var(--blue);
         text-decoration: none;
         :hover {
-            color: var(--red) !important;
+            color: var(--green) !important;
         }
     }
 

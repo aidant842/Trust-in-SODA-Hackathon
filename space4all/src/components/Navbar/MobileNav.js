@@ -16,7 +16,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 const MobileNav = () => {
     const { pathname } = useLocation();
     // variables
-    const red = "#e03f42";
+    const green = "#BDD9C0";
     const blue = "#62a3d1";
 
     const [open, setOpen] = useState(false);
@@ -40,7 +40,7 @@ const MobileNav = () => {
                     <motion.ul
                         variants={{
                             a: { width: "0%" },
-                            b: { width: "50%" },
+                            b: { width: "100%" },
                         }}
                         initial={{ height: 0, opacity: 0 }}
                         animate={{ height: 500, opacity: 1 }}
@@ -59,7 +59,7 @@ const MobileNav = () => {
                                         style={{
                                             color:
                                                 pathname === item.to
-                                                    ? red
+                                                    ? green
                                                     : blue,
                                         }}
                                         onClick={openMenuHandler}
@@ -72,7 +72,7 @@ const MobileNav = () => {
                                         animate={{
                                             width:
                                                 pathname === item.to
-                                                    ? "50%"
+                                                    ? "100%"
                                                     : "0%",
                                         }}
                                     />
@@ -101,7 +101,7 @@ const StyledNav = styled.nav`
         color: var(--blue);
         text-decoration: none;
         :hover {
-            color: var(--red) !important;
+            color: var(--green) !important;
         }
     }
 
@@ -109,7 +109,7 @@ const StyledNav = styled.nav`
         display: flex;
         flex-direction: column;
         list-style: none;
-        height: 500px;
+        height: 300px;
         position: absolute;
         top: 81.5px;
         width: 100%;
@@ -119,6 +119,12 @@ const StyledNav = styled.nav`
     }
 
     li {
+        font-size: 1.3rem;
+        letter-spacing: 1.5px;
+        font-weight: 700;
+        width: 50%;
+        margin: auto;
+        text-align: center;
         position: relative;
         padding: 1rem 0;
     }
@@ -146,7 +152,7 @@ const StyledNav = styled.nav`
 const Line = styled(motion.div)`
     position: absolute;
     height: 0.3rem;
-    background-color: var(--red);
+    background-color: var(--green);
     width: 0%;
     bottom: 1%;
     left: 65%;

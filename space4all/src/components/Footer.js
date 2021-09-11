@@ -88,7 +88,7 @@ const StyledFooter = styled.footer`
         li {
             :hover {
                 font-size: 1.2rem;
-                color: var(--red);
+                color: var(--green);
             }
         }
     }
@@ -111,7 +111,7 @@ const StyledFooter = styled.footer`
                 margin: 5px;
                 text-decoration: unset;
                 :hover {
-                    color: var(--red);
+                    color: var(--green);
                 }
             }
         }

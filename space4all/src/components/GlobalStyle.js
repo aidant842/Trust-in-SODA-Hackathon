@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap');
 :root{
-    --red: #e03f42;
+    --green: #BDD9C0;
     --blue: #62a3d1;
     --d-blueish: #2a4147;
     --blueish-shadow: #2a414773;
