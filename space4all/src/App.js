@@ -11,6 +11,7 @@ import Page4 from "./pages/Page4";
 import Nav from "./components/Navbar/Nav";
 import MobileNav from "./components/Navbar/MobileNav";
 import Footer from "./components/Footer";
+import Widget from "./components/Widget";
 
 // Router
 import { useLocation, Switch, Route } from "react-router-dom";
@@ -27,6 +28,7 @@ function App() {
         <div className="App">
             <GlobalStyle />
             {width >= 1300 ? <Nav /> : <MobileNav />}
+            <Widget />
             <Container>
                 <Switch location={location} key={location.pathname}>
                     {/* Add exact otherwise other urls that begin with a / will be rendered on that page */}
