@@ -52,7 +52,7 @@ const Footer = () => {
                         </li>
                         <li>
                             <a
-                                href=""
+                                href="https://www.linkedin.com/in/andrius-siupinys"
                                 target="_blank"
                                 rel="noreferrer noopener"
                             >
