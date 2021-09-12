@@ -24,22 +24,42 @@ const AcessibilitySettings = ({
             exit={{ width: 0, opacity: 0 }}
             transition={{ delay: 0.15 }}
         >
-            <Button onClick={onClick} text="Close">
-                Close
-            </Button>
+            <div className="btns">
+                <Button onClick={onClick} text="Close" className="closeBtn" />
+                <Button
+                    onClick={onClick}
+                    text="Reset Settings"
+                    className="resetBtn"
+                />
+            </div>
+
             <StyledFontContainer>
                 <h5>Font Settings</h5>
-                <div className="btns">
+                <div className="fontBtns">
                     <Button text="A -" onClick={fontDecrease} />
                     <Button text="A +" onClick={fontIncrease} />
                 </div>
             </StyledFontContainer>
-            <div>
-                <Button text="Highlight Links" onClick={highlightLinks} />
-            </div>
-            <div>
-                <Button text="Large Cursor" onClick={largeCursor} />
-            </div>
+            <form>
+                <div className="form-group">
+                    <label htmlFor="links">Highlight Links</label>
+                    <input
+                        type="checkbox"
+                        name="links"
+                        id="links"
+                        onClick={highlightLinks}
+                    />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="cursor">Large Cursor</label>
+                    <input
+                        type="checkbox"
+                        name="cursor"
+                        id="cursor"
+                        onClick={largeCursor}
+                    />
+                </div>
+            </form>
         </StyledPopOut>
     );
 };
@@ -56,13 +76,29 @@ const StyledPopOut = styled(motion.div)`
     z-index: 9999;
     color: white;
 
-    input[type="range"] {
-        accent-color: var(--green);
+    .btns {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .form-group {
+        display: flex;
+        justify-content: space-around;
+        margin: 1rem 0;
+        input[type="checkbox"] {
+            accent-color: var(--green);
+            width: 20px;
+            height: 20px;
+        }
     }
 `;
 
 const StyledFontContainer = styled.div`
-    .btns {
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    .fontBtns {
         button {
             margin: 1rem;
         }

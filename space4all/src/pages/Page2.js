@@ -53,10 +53,39 @@ const Page2 = () => {
                 />
             </SplitContainer>
             <HR />
-            <TextWithHeader heading="Design Considerations" text="paragraph 1It is important that the working environment is accessible for all employees. Whilst there are many things that companies can do to help create an inclusive environment such as flexible working options, good insurance, and creating a diverse and inclusive culture, the physical environment is just as important. Below are some important design considerations for an office space to ensure that the majority of employees can enjoy a safe, accessible and positive working environment." />
+            <TextWithHeader
+                heading="Design Considerations"
+                text="paragraph 1It is important that the working environment is accessible for all employees. Whilst there are many things that companies can do to help create an inclusive environment such as flexible working options, good insurance, and creating a diverse and inclusive culture, the physical environment is just as important. Below are some important design considerations for an office space to ensure that the majority of employees can enjoy a safe, accessible and positive working environment."
+            />
             <SplitContainer breakpoint="576px">
                 <ImageWithHeader
                     imageSrc={corridoor}
+                    altText="Logo"
+                    height="auto"
+                    width={width >= 576 ? "75%" : "65%"}
+                    heading="Corridors and Floor Space"
+                    text="Corridors and floor spaces should have a width of at least 1.5m where possible to allow for two passing wheelchairs. It is important to keep corridors and floor spaces clutter free with minimal furniture obstructing the path such as placing water fountains in recesses within the wall, or in an open part of the office instead of floor spaces and corridors. Ideally, there should be enough room for a wheelchair user to turn around in their wheelchair (180 degrees)."
+                />
+                <ImageWithHeader
+                    imageSrc={lighting}
+                    altText="Logo"
+                    height="auto"
+                    width={width >= 576 ? "75%" : "65%"}
+                    heading="Heading 2"
+                    text="paragraph 2"
+                />
+                <ImageWithHeader
+                    imageSrc={doorHandle}
+                    altText="Logo"
+                    height="auto"
+                    width={width >= 576 ? "75%" : "65%"}
+                    heading="Heading 3"
+                    text="paragraph 3"
+                />
+            </SplitContainer>
+            <SplitContainer breakpoint="576px">
+                <ImageWithHeader
+                    imageSrc={ramp}
                     altText="Logo"
                     height="auto"
                     width={width >= 576 ? "75%" : "65%"}
