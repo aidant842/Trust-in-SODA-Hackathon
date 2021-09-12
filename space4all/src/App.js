@@ -67,6 +67,12 @@ function App() {
         console.log("Large Cursor!");
     };
 
+    const resetSettingsHandler = () => {
+        setFontSize(1.2);
+        setHighlightLinks(false);
+        setLargeCursor(false);
+    };
+
     return (
         <StyledApp
             className="App"
@@ -83,12 +89,14 @@ function App() {
             <AnimatePresence>
                 {showSettings && (
                     <AcessibilitySettings
-                        onClick={showSettingsHandler}
+                        showSettingsHandler={showSettingsHandler}
+                        resetSettingsHandler={resetSettingsHandler}
                         fontIncrease={fontIncreaseHandler}
                         fontDecrease={fontDecreaseHandler}
-                        fontSize={fontSize}
-                        highlightLinks={highlightLinksHandler}
-                        largeCursor={largeCursorHandler}
+                        highlightLinksHandler={highlightLinksHandler}
+                        largeCursorHandler={largeCursorHandler}
+                        highlightLinks={highlightLinks}
+                        largeCursor={largeCursor}
                     />
                 )}
             </AnimatePresence>
