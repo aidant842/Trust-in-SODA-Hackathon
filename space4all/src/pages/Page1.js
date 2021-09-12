@@ -54,6 +54,33 @@ const Page1 = () => {
                 />
             </SplitContainer>
 
+            <StyledUl>
+                <li>
+                    Get employees to take personality tests and team-up the ones
+                    that would work well together.
+                </li>
+                <li>
+                    Focus on experience, hard skills, and soft skills rather
+                    than education.
+                </li>
+                <li>Hire out-of-market candidates.</li>
+                <li>
+                    Provide an open, supportive, inclusive and empowering
+                    environment for everyone to feel comfortable to raise
+                    concerns, express individuality, learn new things and
+                    communicate effectively.
+                </li>
+                <li>
+                    Provide online translation services or an in-person
+                    interpreter for roles that don’t require fluency in a
+                    language.
+                </li>
+                <li>
+                    Create Employee Resource Groups for different areas such as
+                    LGBTQIA+.
+                </li>
+            </StyledUl>
+
             <HR />
 
             <SplitContainer>
