@@ -2,33 +2,24 @@
 
 Click [here](https://space4all-4d0b1.web.app/) for the deployed site.
 
-[INSERT IMAGE OF SITE ACROSS DeVICES]
+![Image of Website Across Devices](/space4all/src/static/images/readme-images/websiteexample.png)
 
-<p align="center">
-  <img width="40%" src="">
-</p>
- 
-<p align="center"><a href="" target = "_blank"></a></p>
- 
 ## Table of Contents
  
-- [**About**](#About)
-- [**Planning**](#Planning)
+- About
+- Planning
     - Choosing a Topic
     - Team Roles
     - Polls and Wireframes
-- [**UX**](#UX)
+- UX
     - User Stories
     - Design
     - Features
-- [**Future Implementations**](#Future-implementations)
-- [**Technologies used**](#Technologies-used)
-- [**Testing**](#Testing)
-    - Manual Testing
-    - Automated Testing
-    - Errors 
-- [**Deployment**](#Deployment)
-- [**Credits / Acknowledgements**](#Credits)
+- Future Implementations
+- Technologies used
+- Testing
+- Deployment
+- Credits / Acknowledgements
     - Code
     - Images
     - Research
@@ -142,8 +133,6 @@ Below is listed the programming languages, technologies, frameworks and resource
 
 ## Credits / Acknowledgements
 
-### Code
-
 ### Images
 
 
@@ -160,6 +149,10 @@ Below is listed the programming languages, technologies, frameworks and resource
     * [Wonolo Article](www.wonolo.com/blog/6-benefits-of-having-a-diverse-workforce/)
 * Types of Diversity 
     * [Diverstiy Article, builtin](https://builtin.com/diversity-inclusion/types-of-diversity-in-the-workplace)
+* General Research
+    * [People Management](https://www.peoplemanagement.co.uk/voices/comment/how-to-use-braille-signs-improve-accessibility-workplace#gref)
+    * [Anuprayaas](https://anuprayaas.org/8-ways-to-make-a-workplace-accessible-disability-friendly/)
+    * [Oxford Dictionary](https://www.oxfordlearnersdictionaries.com/)
 
 
 
