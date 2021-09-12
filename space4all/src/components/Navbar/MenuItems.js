@@ -4,7 +4,7 @@ export const MenuItems = [
         to: "/",
     },
     {
-        title: "Images",
+        title: "Design",
         to: "/images",
     },
     {
@@ -12,7 +12,7 @@ export const MenuItems = [
         to: "/checklist",
     },
     {
-        title: "Resources",
+        title: "Accessories",
         to: "/resources",
     },
 ];
