@@ -27,11 +27,13 @@ const AcessibilitySettings = ({
             <Button onClick={onClick} text="Close">
                 Close
             </Button>
-            <div>
-                <Button text="A -" onClick={fontDecrease} />
-                <Button text="A +" onClick={fontIncrease}></Button>
-                {fontSize}
-            </div>
+            <StyledFontContainer>
+                <h5>Font Settings</h5>
+                <div className="btns">
+                    <Button text="A -" onClick={fontDecrease} />
+                    <Button text="A +" onClick={fontIncrease} />
+                </div>
+            </StyledFontContainer>
             <div>
                 <Button text="Highlight Links" onClick={highlightLinks} />
             </div>
@@ -56,6 +58,14 @@ const StyledPopOut = styled(motion.div)`
 
     input[type="range"] {
         accent-color: var(--green);
+    }
+`;
+
+const StyledFontContainer = styled.div`
+    .btns {
+        button {
+            margin: 1rem;
+        }
     }
 `;
 

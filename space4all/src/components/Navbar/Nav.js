@@ -66,9 +66,9 @@ const StyledNav = styled.nav`
     top: 0;
     z-index: 100;
     a {
-        text-shadow: white 0px 0px 5px;
+        /* text-shadow: white 0px 0px 5px; */
         font-size: 1.2rem;
-        font-weight: 700;
+        /* font-weight: 700; */
         text-decoration: none;
         :hover {
             color: var(--d-blueish) !important;
