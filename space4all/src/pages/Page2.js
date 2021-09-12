@@ -15,6 +15,9 @@ import logo from "../static/images/logo.png";
 import poor from "../static/images/poor.png";
 import good from "../static/images/good.png";
 import narrowVs from "../static/images/narrowVs.png";
+import corridoor from "../static/images/corridoor.png";
+import lighting from "../static/images/lighting.png";
+import doorHandle from "../static/images/doorHandle.png";
 
 //Custom Hooks
 import useWindowDimensions from "../Hooks/useWindowDimenstions";
@@ -52,28 +55,28 @@ const Page2 = () => {
             <TextWithHeader heading="Heading 2" text="paragraph 2" />
             <Image imageSrc={logo} altText="Logo" height="auto" width="100%" />
             <HR />
-            <SplitContainer>
+            <SplitContainer breakpoint="576px">
                 <ImageWithHeader
-                    imageSrc={logo}
+                    imageSrc={corridoor}
                     altText="Logo"
-                    height="50px"
-                    width="50px"
+                    height="auto"
+                    width={width >= 576 ? "75%" : "65%"}
                     heading="Heading 1"
                     text="paragraph 1"
                 />
                 <ImageWithHeader
-                    imageSrc={logo}
+                    imageSrc={lighting}
                     altText="Logo"
-                    height="50px"
-                    width="50px"
+                    height="auto"
+                    width={width >= 576 ? "75%" : "65%"}
                     heading="Heading 2"
                     text="paragraph 2"
                 />
                 <ImageWithHeader
-                    imageSrc={logo}
+                    imageSrc={doorHandle}
                     altText="Logo"
-                    height="50px"
-                    width="50px"
+                    height="auto"
+                    width={width >= 576 ? "75%" : "65%"}
                     heading="Heading 3"
                     text="paragraph 3"
                 />

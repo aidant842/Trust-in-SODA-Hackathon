@@ -10,12 +10,18 @@ import Checklist from "../components/Checklist/Checklist";
 
 //Images
 import logo from "../static/images/logo.png";
+import checklistImg from "../static/images/checklist.png";
 
 const Page3 = () => {
     return (
         <>
             <TextWithHeader heading="Heading 1" text="Paragraph 1" />
-            <Image imageSrc={logo} altText="Logo" height="auto" width="100%" />
+            <Image
+                imageSrc={checklistImg}
+                altText="Logo"
+                height="auto"
+                width="50%"
+            />
             <HR />
             <TextWithHeader heading="Heading 2" text="Paragraph 2" />
             <Checklist />

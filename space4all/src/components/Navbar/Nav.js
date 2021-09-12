@@ -9,7 +9,6 @@ import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 //nav links
 import { MenuItems } from "./MenuItems";
-import { GiGreenPower } from "react-icons/gi";
 
 const Nav = () => {
     const { pathname } = useLocation();
@@ -54,7 +53,7 @@ const Nav = () => {
     );
 };
 const StyledNav = styled.nav`
-    min-height: 10vh;
+    height: 113.5px;
     display: flex;
     margin: auto;
     margin-bottom: 1rem;
@@ -92,9 +91,6 @@ const StyledNav = styled.nav`
         padding-left: 10rem;
         position: relative;
     }
-    /* @media (max-width: 1300px) {
-        display: none;
-    } */
 `;
 
 const Line = styled(motion.div)`
@@ -104,9 +100,6 @@ const Line = styled(motion.div)`
     position: absolute;
     bottom: -60%;
     left: 50%;
-    /* @media (max-width: 1300px) {
-        left: 0%;
-    } */
 `;
 
 export default Nav;
