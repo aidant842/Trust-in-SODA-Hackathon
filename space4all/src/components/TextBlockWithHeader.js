@@ -17,7 +17,13 @@ const TextBlockWithHeader = (props) => {
                         {resources.map((resource) => {
                             return (
                                 <li>
-                                    <a href={resource.url}>{resource.title}</a>
+                                    <a
+                                        href={resource.url}
+                                        target="_blank"
+                                        rel="noreferrer noopener"
+                                    >
+                                        {resource.title}
+                                    </a>
                                 </li>
                             );
                         })}
