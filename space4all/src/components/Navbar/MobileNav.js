@@ -12,13 +12,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { MenuItems } from "./MenuItems";
 //React icons
 import { GiHamburgerMenu } from "react-icons/gi";
+import { GrClose } from "react-icons/gr";
 
 const MobileNav = () => {
     const { pathname } = useLocation();
     // variables
     const green = "#BDD9C0";
     const blue = "#62a3d1";
-    const dblueish = "#2a4147";
 
     const [open, setOpen] = useState(false);
 
@@ -35,7 +35,14 @@ const MobileNav = () => {
                     <img src={logo} alt="Space for All Logo" id="logo"></img>
                 </Link>
             </h1>
-            <GiHamburgerMenu className="navButton" onClick={openMenuHandler} />
+            {open ? (
+                <GrClose className="navButton" onClick={openMenuHandler} />
+            ) : (
+                <GiHamburgerMenu
+                    className="navButton"
+                    onClick={openMenuHandler}
+                />
+            )}
             <AnimatePresence>
                 {open && (
                     <motion.ul

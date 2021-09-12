@@ -29,6 +29,9 @@ import { AnimatePresence } from "framer-motion";
 //Styled Components
 import styled from "styled-components";
 
+//Cursors
+/* import cursor from "./static/images/cursor.png"; */
+
 function App() {
     //Variables
     const location = useLocation();
@@ -38,6 +41,7 @@ function App() {
     const [showSettings, setShowSettings] = useState();
     const [settingsAnimating, setSettingsAnimating] = useState(false);
     const [highlightLinks, setHighlightLinks] = useState(false);
+    const [largeCursor, setLargeCursor] = useState(false);
 
     //Handlers
 
@@ -56,20 +60,21 @@ function App() {
 
     const highlightLinksHandler = () => {
         setHighlightLinks((prevState) => !prevState);
-        console.log(highlightLinks);
+    };
+
+    const largeCursorHandler = () => {
+        setLargeCursor((prevState) => !prevState);
+        console.log("Large Cursor!");
     };
 
     return (
         <StyledApp
             className="App"
             highlightLinks={highlightLinks}
-            style={{
-                fontSize: `${fontSize}rem`,
-                lineHeight: `calc(1rem * ${fontSize * 1.5})`,
-                letterSpacing: `calc(0.1rem * ${fontSize})`,
-            }}
+            fontSize={fontSize}
+            largeCursor={largeCursor}
         >
-            <GlobalStyle highlightLinks={highlightLinks} />
+            <GlobalStyle />
             {width >= 1300 ? <Nav /> : <MobileNav />}
             <Widget
                 onClick={showSettingsHandler}
@@ -81,13 +86,14 @@ function App() {
                         onClick={showSettingsHandler}
                         fontIncrease={fontIncreaseHandler}
                         fontDecrease={fontDecreaseHandler}
+                        fontSize={fontSize}
                         highlightLinks={highlightLinksHandler}
+                        largeCursor={largeCursorHandler}
                     />
                 )}
             </AnimatePresence>
             <Container>
                 <Switch location={location} key={location.pathname}>
-                    {/* Add exact otherwise other urls that begin with a / will be rendered on that page */}
                     <Route path="/" exact>
                         <Page1 />
                     </Route>
@@ -108,6 +114,15 @@ function App() {
 }
 
 const StyledApp = styled.div`
+    font-size: ${(props) => `${props.fontSize}rem`};
+    line-height: ${(props) => `calc(1rem * ${props.fontSize * 1.5})`};
+    letter-spacing: ${(props) => `calc(0.1rem * ${props.fontSize})`};
+
+    /* cursor: ${(props) =>
+        props.largeCursor
+            ? "url(/static/images/cursor.png), auto"
+            : "cursor"}; */
+
     a {
         background-color: ${(props) =>
             props.highlightLinks ? "yellow" : "none"};

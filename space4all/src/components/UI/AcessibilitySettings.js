@@ -13,7 +13,9 @@ const AcessibilitySettings = ({
     onClick,
     fontIncrease,
     fontDecrease,
+    fontSize,
     highlightLinks,
+    largeCursor,
 }) => {
     return (
         <StyledPopOut
@@ -28,9 +30,13 @@ const AcessibilitySettings = ({
             <div>
                 <Button text="A -" onClick={fontDecrease} />
                 <Button text="A +" onClick={fontIncrease}></Button>
+                {fontSize}
             </div>
             <div>
                 <Button text="Highlight Links" onClick={highlightLinks} />
+            </div>
+            <div>
+                <Button text="Large Cursor" onClick={largeCursor} />
             </div>
         </StyledPopOut>
     );
