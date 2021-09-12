@@ -98,9 +98,9 @@ Colour was also an incredibly important part of the design considerations consid
 
 ![Colour Palette](/space4all/src/static/images/readme-images/palette.jpg)
 
-## Features
+### Features
 
-### Future updates
+## Future Implementations
 
 ## Technologies used
 
@@ -132,55 +132,35 @@ Below is listed the programming languages, technologies, frameworks and resource
 
 ### Manual testing
 
-<details>
-<summary>
-Testing conducted
-</summary>
-
-</details>
-
 ### Automated testing
 
 ### Errors
 
-<details>
-<summary>
-Current errors:
-</summary>
-</details>
-
-## Code Notes
-
 ## Deployment
-
-<details>
-<summary>
-Deployment
-</summary>
-
-**The final version of the application was deployed using Heroku:**  
-**[here](/)**
-
-</details>
 
 ### Local Deployment
 
-<details>
-<summary>
-If you want to run this project locally, you will need to follow these steps.
-</summary>
+## Credits / Acknowledgements
 
-Requirements:
-
-</details>
- 
-## Credits
 ### Code
 
 ### Images
 
--
 
-## Acknowledgements
+### Research
+* Colour Palette Creation - [Allana Bailey's Colour-Blind-Project](https://github.com/allanabailey/color-blind-project1)
+    * Medium Article by Allie Ofisher - Informative website on inclusive design with suggested colour palettes which inspired the use of the two main colours for the scheme of this project.
+    * palett - Inclusive colour palette generator.
+    * Adobe Color - Used to check the contrast and accessibility of colours in a palette.
+    * coolors - Identify the hex and rgb values of the palette created and check its appearance as per type of colour blindness.
+* Types of Disability
+    * [Disabled World](www.disabled-world.com/disability/types)
+    * [Changing Paces](https://changingpaces.com/6-general-types-of-disabilities/)
+* Benefits of a Diverse Workplace
+    * [Wonolo Article](www.wonolo.com/blog/6-benefits-of-having-a-diverse-workforce/)
+* Types of Diversity 
+    * [Diverstiy Article, builtin](https://builtin.com/diversity-inclusion/types-of-diversity-in-the-workplace)
+
+
 
 [Back to top ↑]()
