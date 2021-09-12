@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // Styles
 import GlobalStyle from "./components/GlobalStyle";
@@ -36,15 +36,37 @@ function App() {
     const showSettingsHandler = () => {
         setShowSettings((prevState) => !prevState);
     };
+    const [fontSize, setFontSize] = useState(1.2);
+
+    const fontIncreaseHandler = () => {
+        return setFontSize((prevState) => (prevState += 0.2));
+    };
+    const fontDecreaseHandler = () => {
+        return setFontSize((prevState) => (prevState -= 0.2));
+    };
 
     return (
-        <div className="App">
+        <div
+            className="App"
+            style={{
+                fontSize: `${fontSize}rem`,
+                lineHeight: `calc(1rem * ${fontSize * 1.5})`,
+                letterSpacing: `calc(0.1rem * ${fontSize})`,
+            }}
+        >
             <GlobalStyle />
             {width >= 1300 ? <Nav /> : <MobileNav />}
-            <Widget onClick={showSettingsHandler} />
+            <Widget
+                onClick={showSettingsHandler}
+                style={{ right: showSettings ? "500px" : "0" }}
+            />
 
             {showSettings && (
-                <AcessibilitySettings onClick={showSettingsHandler} />
+                <AcessibilitySettings
+                    onClick={showSettingsHandler}
+                    fontIncrease={fontIncreaseHandler}
+                    fontDecrease={fontDecreaseHandler}
+                />
             )}
             <Container>
                 <Switch location={location} key={location.pathname}>

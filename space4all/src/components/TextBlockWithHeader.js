@@ -37,8 +37,6 @@ const TextBlockWithHeader = (props) => {
 };
 
 const StyledTextBlock = styled.div`
-    line-height: 1.5rem;
-    letter-spacing: 0.1rem;
     h4 {
         padding-bottom: 1rem;
     }
