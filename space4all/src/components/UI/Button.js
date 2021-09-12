@@ -13,7 +13,7 @@ const Button = ({ text, onClick, className }) => {
 
 const StyledButton = styled.button`
     height: 50px;
-    width: 100px;
+    width: 150px;
     background-color: var(--blue);
     color: white;
     border: none;

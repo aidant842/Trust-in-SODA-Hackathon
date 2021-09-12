@@ -10,10 +10,12 @@ import Button from "./Button";
 import { motion } from "framer-motion";
 
 const AcessibilitySettings = ({
-    onClick,
+    showSettingsHandler,
+    resetSettingsHandler,
     fontIncrease,
     fontDecrease,
-    fontSize,
+    highlightLinksHandler,
+    largeCursorHandler,
     highlightLinks,
     largeCursor,
 }) => {
@@ -25,9 +27,13 @@ const AcessibilitySettings = ({
             transition={{ delay: 0.15 }}
         >
             <div className="btns">
-                <Button onClick={onClick} text="Close" className="closeBtn" />
                 <Button
-                    onClick={onClick}
+                    onClick={showSettingsHandler}
+                    text="Close"
+                    className="closeBtn"
+                />
+                <Button
+                    onClick={resetSettingsHandler}
                     text="Reset Settings"
                     className="resetBtn"
                 />
@@ -47,7 +53,8 @@ const AcessibilitySettings = ({
                         type="checkbox"
                         name="links"
                         id="links"
-                        onClick={highlightLinks}
+                        checked={highlightLinks}
+                        onClick={highlightLinksHandler}
                     />
                 </div>
                 <div className="form-group">
@@ -56,7 +63,8 @@ const AcessibilitySettings = ({
                         type="checkbox"
                         name="cursor"
                         id="cursor"
-                        onClick={largeCursor}
+                        checked={largeCursor}
+                        onClick={largeCursorHandler}
                     />
                 </div>
             </form>
@@ -75,6 +83,8 @@ const StyledPopOut = styled(motion.div)`
     text-align: center;
     z-index: 9999;
     color: white;
+    /* border-left: 1px solid var(--green); */
+    box-shadow: 0 0 10px black;
 
     .btns {
         display: flex;
@@ -83,8 +93,9 @@ const StyledPopOut = styled(motion.div)`
 
     .form-group {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         margin: 1rem 0;
+        padding: 0 2rem;
         input[type="checkbox"] {
             accent-color: var(--green);
             width: 20px;
