@@ -8,12 +8,11 @@ import SplitContainer from "../UI/SplitContainer";
 import styled from "styled-components";
 
 const ProductCard = (props) => {
-    const { url, imageSrc, altText, imgWidth, imgHeight, heading, text } =
+    const { imageSrc, altText, imgWidth, imgHeight, heading, text } =
         props;
     return (
         <StyledCard>
-            <a href={url} target="_blank" rel="noreferrer">
-                <SplitContainer>
+            <SplitContainer>
                     <Image
                         imageSrc={imageSrc}
                         altText={altText}
@@ -21,8 +20,7 @@ const ProductCard = (props) => {
                         height={imgHeight}
                     />
                     <StyledTextWithHeader heading={heading} text={text} />
-                </SplitContainer>
-            </a>
+            </SplitContainer>
         </StyledCard>
     );
 };
