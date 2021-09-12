@@ -114,7 +114,7 @@ const StyledFooter = styled.footer`
                 font-size: 1.3rem;
                 font-weight: 400;
                 letter-spacing: 1px;
-                text-shadow: 0 0 5px white;
+                /* text-shadow: 0 0 5px white; */
                 :hover {
                     color: var(--d-blueish);
                 }
