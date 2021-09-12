@@ -11,7 +11,7 @@ const StyledHr = styled.div`
     background-color: var(--d-blueish);
     height: 2px;
     width: 20%;
-    margin: 0 auto;
+    margin: 2rem auto;
 `;
 
 export default HR;

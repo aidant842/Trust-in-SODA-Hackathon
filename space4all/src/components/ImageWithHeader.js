@@ -22,6 +22,9 @@ const ImageWithHeader = (props) => {
 const StyledImageContainer = styled.div`
     width: 100%;
     justify-content: center;
+    p {
+        padding: 1rem 2rem;
+    }
 `;
 
 const StyledImage = styled.img``;
