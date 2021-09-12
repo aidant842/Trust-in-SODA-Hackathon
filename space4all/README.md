@@ -1,70 +1,136 @@
-# Getting Started with Create React App
+# Project Name
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### Hackathon Project
 
-## Available Scripts
+<p align="center">
+  <img width="40%" src="">
+</p>
+ 
+<p align="center"><a href="" target = "_blank"></a></p>
+ 
+## Table of Contents
+ 
+- [**About**](#About)
+- [**UX**](#UX)
+    - [User Stories](#User-Stories)
+    - [UI](#ui)
+    - [Design](#Design)
+    - [Database Schema](#database-schema)
+    - [Database Model](#database-model)
+    - [Wireframes](#Wireframes)
+- [**Features**](#Features)
+    - [Future features](#Future-updates)
+- [**Technologies used**](#Technologies-used)
+- [**Testing**](#Testing)
+    - [Manual Testing](#Testing)
+    - [Automated Testing](#Automated-Testing)
+    - [Errors](#Errors)   
+- [**Code Notes**](#Code-Notes)
+- [**Deployment**](#Deployment)
+- [**Credits**](#Deployment)
+    - [Code](#Code)
+    - [Images](#Images)
+- [**Acknowledgements**](#Acknowledgements)
 
-In the project directory, you can run:
+## About
 
-### `npm start`
+## UX
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### User Stories
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<a href="" target="_blank">User Stories PDF</a>
 
-### `npm test`
+### UI
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Design
 
-### `npm run build`
+### Wireframes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-   <a href="" target="_blank">Wireframes</a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Future updates
 
-### `npm run eject`
+## Technologies used
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Below is listed the programming languages, technologies, frameworks and resources used for this project.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-   **HTML5**
+-   **CSS3**
+-   **Vanilla JS**
+-   **J Query**
+-   **Markdown**
+-   **Git** for version control.
+-   **[Github](https://github.com/)** to hold my project.
+-   **[FontAwesome](https://fontawesome.com/)** for icons.
+-   **Google Chrome/FireFox/Edge/Safari**
+-   **Developer tools for chrome/FireFox/Edge**
+-   **[Amiresponsive](http://ami.responsivedesign.is/)**
+-   **[W3Schools](https://www.w3schools.com/)** for help with some issues i ran into
+-   **[StackOverFlow](https://stackoverflow.com/)** for help with some issues i ran into
+-   **[Slack](https://slack.com/)**
+-   **[Grammarly](https://www.grammarly.com/)** to correct grammar and spelling mistakes.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Testing
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+-   [HTML validator](https://validator.w3.org/#validate_by_input)
+-   [CSS validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+-   [JsHint](https://jshint.com)
+-   Testing [checklist](https://geteasyqa.com/qa/test-website/)
+-   [pep8](http://pep8online.com/)
 
-## Learn More
+### Manual testing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<details>
+<summary>
+Testing conducted
+</summary>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+</details>
 
-### Code Splitting
+### Automated testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Errors
 
-### Analyzing the Bundle Size
+<details>
+<summary>
+Current errors:
+</summary>
+</details>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Code Notes
 
-### Making a Progressive Web App
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<details>
+<summary>
+Deployment
+</summary>
 
-### Advanced Configuration
+**The final version of the application was deployed using Heroku:**  
+**[here](/)**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+</details>
 
-### Deployment
+### Local Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<details>
+<summary>
+If you want to run this project locally, you will need to follow these steps.
+</summary>
 
-### `npm run build` fails to minify
+Requirements:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</details>
+ 
+## Credits
+### Code
+
+### Images
+
+-
+
+## Acknowledgements
+
+[Back to top ↑]()
