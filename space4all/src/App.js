@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 // Styles
 import GlobalStyle from "./components/GlobalStyle";
 
@@ -12,6 +14,7 @@ import Nav from "./components/Navbar/Nav";
 import MobileNav from "./components/Navbar/MobileNav";
 import Footer from "./components/Footer";
 import Widget from "./components/Widget";
+import AcessibilitySettings from "./components/UI/AcessibilitySettings";
 
 // Router
 import { useLocation, Switch, Route } from "react-router-dom";
@@ -24,11 +27,25 @@ function App() {
     //Variables
     const location = useLocation();
     const { width } = useWindowDimensions();
+
+    //State
+    const [showSettings, setShowSettings] = useState();
+
+    //Handlers
+
+    const showSettingsHandler = () => {
+        setShowSettings((prevState) => !prevState);
+    };
+
     return (
         <div className="App">
             <GlobalStyle />
             {width >= 1300 ? <Nav /> : <MobileNav />}
-            <Widget />
+            <Widget onClick={showSettingsHandler} />
+
+            {showSettings && (
+                <AcessibilitySettings onClick={showSettingsHandler} />
+            )}
             <Container>
                 <Switch location={location} key={location.pathname}>
                     {/* Add exact otherwise other urls that begin with a / will be rendered on that page */}
