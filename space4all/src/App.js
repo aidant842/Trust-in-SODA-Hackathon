@@ -26,6 +26,9 @@ import useWindowDimensions from "./Hooks/useWindowDimenstions";
 //Framer Motion
 import { AnimatePresence } from "framer-motion";
 
+//Styled Components
+import styled from "styled-components";
+
 function App() {
     //Variables
     const location = useLocation();
@@ -34,6 +37,7 @@ function App() {
     //State
     const [showSettings, setShowSettings] = useState();
     const [settingsAnimating, setSettingsAnimating] = useState(false);
+    const [highlightLinks, setHighlightLinks] = useState(false);
 
     //Handlers
 
@@ -44,22 +48,28 @@ function App() {
     const [fontSize, setFontSize] = useState(1.2);
 
     const fontIncreaseHandler = () => {
-        return setFontSize((prevState) => (prevState += 0.2));
+        setFontSize((prevState) => (prevState += 0.2));
     };
     const fontDecreaseHandler = () => {
-        return setFontSize((prevState) => (prevState -= 0.2));
+        setFontSize((prevState) => (prevState -= 0.2));
+    };
+
+    const highlightLinksHandler = () => {
+        setHighlightLinks((prevState) => !prevState);
+        console.log(highlightLinks);
     };
 
     return (
-        <div
+        <StyledApp
             className="App"
+            highlightLinks={highlightLinks}
             style={{
                 fontSize: `${fontSize}rem`,
                 lineHeight: `calc(1rem * ${fontSize * 1.5})`,
                 letterSpacing: `calc(0.1rem * ${fontSize})`,
             }}
         >
-            <GlobalStyle />
+            <GlobalStyle highlightLinks={highlightLinks} />
             {width >= 1300 ? <Nav /> : <MobileNav />}
             <Widget
                 onClick={showSettingsHandler}
@@ -71,6 +81,7 @@ function App() {
                         onClick={showSettingsHandler}
                         fontIncrease={fontIncreaseHandler}
                         fontDecrease={fontDecreaseHandler}
+                        highlightLinks={highlightLinksHandler}
                     />
                 )}
             </AnimatePresence>
@@ -92,8 +103,15 @@ function App() {
                 </Switch>
             </Container>
             <Footer />
-        </div>
+        </StyledApp>
     );
 }
+
+const StyledApp = styled.div`
+    a {
+        background-color: ${(props) =>
+            props.highlightLinks ? "yellow" : "none"};
+    }
+`;
 
 export default App;

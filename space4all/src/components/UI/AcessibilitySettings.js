@@ -9,7 +9,12 @@ import Button from "./Button";
 //Framer Motion
 import { motion } from "framer-motion";
 
-const AcessibilitySettings = ({ onClick, fontIncrease, fontDecrease }) => {
+const AcessibilitySettings = ({
+    onClick,
+    fontIncrease,
+    fontDecrease,
+    highlightLinks,
+}) => {
     return (
         <StyledPopOut
             initial={{ width: 0, opacity: 0 }}
@@ -23,6 +28,9 @@ const AcessibilitySettings = ({ onClick, fontIncrease, fontDecrease }) => {
             <div>
                 <Button text="A -" onClick={fontDecrease} />
                 <Button text="A +" onClick={fontIncrease}></Button>
+            </div>
+            <div>
+                <Button text="Highlight Links" onClick={highlightLinks} />
             </div>
         </StyledPopOut>
     );
