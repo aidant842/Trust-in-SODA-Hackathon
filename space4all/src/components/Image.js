@@ -4,9 +4,9 @@ import React from "react";
 import styled from "styled-components";
 
 const Image = (props) => {
-    const { imageSrc, altText, height, width } = props;
+    const { imageSrc, altText, height, width, margin } = props;
     return (
-        <StyledImageContainer>
+        <StyledImageContainer margin={margin}>
             <StyledImage
                 src={imageSrc}
                 alt={altText}
@@ -20,6 +20,7 @@ const Image = (props) => {
 const StyledImageContainer = styled.div`
     width: 100%;
     justify-content: center;
+    padding: ${(props) => (props.margin ? props.margin : "0 2rem")};
 `;
 
 const StyledImage = styled.img``;

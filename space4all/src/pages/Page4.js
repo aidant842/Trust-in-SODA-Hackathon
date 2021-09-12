@@ -12,28 +12,36 @@ import logo from "../static/images/logo.png";
 // Styled Components
 import styled from "styled-components";
 const Page4 = () => {
-
-    return ( <>
-        <Image imageSrc = {logo}
-        altText = "logo"
-        width = "100%"
-        height = "auto" / >
-        <HR / >
-        <TextWithHeader heading = "Heading 1"
-        text = "paragraph 1" / >
-        {Products.map((product, index) => {
-            return (
-                <ProductCard key={index} url={product.url} imageSrc={product.imageSrc} altText={product.altText} imgWidth={product.imgWidth} imgHeight={product.imgHeight} heading={product.heading} text={product.text} />
-            )
-        })}
+    return (
+        <>
+            <Image imageSrc={logo} altText="logo" width="80%" height="auto" />
+            <HR />
+            <TextWithHeader
+                heading="RESOURCES AND ACCESSORIES"
+                text="By taking some time to address areas of the workstation and surrounds the benefits to the user and the company are so much."
+            />
+            {Products.map((product, index) => {
+                return (
+                    <ProductCard
+                        key={index}
+                        url={product.url}
+                        imageSrc={product.imageSrc}
+                        altText={product.altText}
+                        imgWidth={product.imgWidth}
+                        imgHeight={product.imgHeight}
+                        heading={product.heading}
+                        text={product.text}
+                    />
+                );
+            })}
         </>
     );
 };
 
-const TextWithHeader = styled(TextBlockWithHeader)
-`
+const TextWithHeader = styled(TextBlockWithHeader)`
     text-align: center;
     width: 100%;
+    margin: 4rem 0;
 `;
 
 export default Page4;

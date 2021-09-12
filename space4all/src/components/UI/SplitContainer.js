@@ -12,7 +12,7 @@ const SplitContainer = ({ className, breakpoint, children }) => {
 };
 const StyledHalfWidth = styled.div`
     display: flex;
-    margin: 2rem 0 2rem 0;
+    margin: 4rem 0;
     @media (max-width: ${(props) =>
             props.breakpoint ? props.breakpoint : "1300px"}) {
         display: block;

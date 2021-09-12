@@ -33,18 +33,21 @@ const Page2 = () => {
                     imageSrc={good}
                     altText="Logo"
                     height="auto"
+                    margin="0"
                     width={width >= 576 ? "65%" : "35%"}
                 />
                 <Image
                     imageSrc={narrowVs}
                     altText="Logo"
                     height="auto"
+                    margin="0"
                     width={width >= 576 ? "65%" : "35%"}
                 />
                 <Image
                     imageSrc={poor}
                     altText="Logo"
                     height="auto"
+                    margin="0"
                     width={width >= 576 ? "65%" : "35%"}
                 />
             </SplitContainer>
@@ -89,12 +92,5 @@ const TextWithHeader = styled(TextBlockWithHeader)`
     text-align: center;
     width: 100%;
 `;
-
-/* const StyledSplitContainer = styled(SplitContainer)`
-    display: flex !important;
-    @media (max-wdith: 700px) {
-        display: block !important;
-    }
-`; */
 
 export default Page2;
