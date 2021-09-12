@@ -15,6 +15,7 @@ import MobileNav from "./components/Navbar/MobileNav";
 import Footer from "./components/Footer";
 import Widget from "./components/Widget";
 import AcessibilitySettings from "./components/UI/AcessibilitySettings";
+import BttButton from "./components/UI/BttButton";
 
 // Router
 import { useLocation, Switch, Route } from "react-router-dom";
@@ -73,6 +74,14 @@ function App() {
         setLargeCursor(false);
     };
 
+    const bttHandler = () => {
+        console.log("btt clicked");
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
+
     return (
         <StyledApp
             className="App"
@@ -116,6 +125,7 @@ function App() {
                     </Route>
                 </Switch>
             </Container>
+            <BttButton onClick={bttHandler} />
             <Footer />
         </StyledApp>
     );
