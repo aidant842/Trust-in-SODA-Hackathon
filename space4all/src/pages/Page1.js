@@ -23,7 +23,7 @@ const Page1 = () => {
         <>
             <SplitContainer>
                 <TextWithHeader
-                    heading="First Heading"
+                    heading="Addressing Workplace Accessibility"
                     text="space4ALL promotes awareness and provides solutions to enhance accessibility through diversity, inclusion and equality in the workplace environment. 
                     Employees are more involved with their work and team, which means they are more likely to stay with a company resulting in higher retention rates.
                     At an early stage in recruitment it is important to highlight how issues relating to inclusion, disabilities, be it physical or neurodivergent are managed to ensure a positive experience in the world place.
