@@ -6,9 +6,17 @@ import styled from "styled-components";
 //components
 import Button from "./Button";
 
+//Framer Motion
+import { motion } from "framer-motion";
+
 const AcessibilitySettings = ({ onClick, fontIncrease, fontDecrease }) => {
     return (
-        <StyledPopOut>
+        <StyledPopOut
+            initial={{ width: 0, opacity: 0 }}
+            animate={{ width: 500, opacity: 1 }}
+            exit={{ width: 0, opacity: 0 }}
+            transition={{ delay: 0.15 }}
+        >
             <Button onClick={onClick} text="Close">
                 Close
             </Button>
@@ -20,7 +28,7 @@ const AcessibilitySettings = ({ onClick, fontIncrease, fontDecrease }) => {
     );
 };
 
-const StyledPopOut = styled.div`
+const StyledPopOut = styled(motion.div)`
     position: fixed;
     right: 0;
     top: 0;

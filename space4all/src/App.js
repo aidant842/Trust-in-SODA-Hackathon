@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 // Styles
 import GlobalStyle from "./components/GlobalStyle";
@@ -23,6 +23,9 @@ import Container from "./components/UI/Container";
 //Custom Hooks
 import useWindowDimensions from "./Hooks/useWindowDimenstions";
 
+//Framer Motion
+import { AnimatePresence } from "framer-motion";
+
 function App() {
     //Variables
     const location = useLocation();
@@ -30,11 +33,13 @@ function App() {
 
     //State
     const [showSettings, setShowSettings] = useState();
+    const [settingsAnimating, setSettingsAnimating] = useState(false);
 
     //Handlers
 
     const showSettingsHandler = () => {
         setShowSettings((prevState) => !prevState);
+        setSettingsAnimating((prevState) => !prevState);
     };
     const [fontSize, setFontSize] = useState(1.2);
 
@@ -58,16 +63,17 @@ function App() {
             {width >= 1300 ? <Nav /> : <MobileNav />}
             <Widget
                 onClick={showSettingsHandler}
-                style={{ right: showSettings ? "500px" : "0" }}
+                settingsAnimating={settingsAnimating}
             />
-
-            {showSettings && (
-                <AcessibilitySettings
-                    onClick={showSettingsHandler}
-                    fontIncrease={fontIncreaseHandler}
-                    fontDecrease={fontDecreaseHandler}
-                />
-            )}
+            <AnimatePresence>
+                {showSettings && (
+                    <AcessibilitySettings
+                        onClick={showSettingsHandler}
+                        fontIncrease={fontIncreaseHandler}
+                        fontDecrease={fontDecreaseHandler}
+                    />
+                )}
+            </AnimatePresence>
             <Container>
                 <Switch location={location} key={location.pathname}>
                     {/* Add exact otherwise other urls that begin with a / will be rendered on that page */}

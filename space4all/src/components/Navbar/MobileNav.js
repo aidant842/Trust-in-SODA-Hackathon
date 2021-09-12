@@ -39,10 +39,6 @@ const MobileNav = () => {
             <AnimatePresence>
                 {open && (
                     <motion.ul
-                        variants={{
-                            a: { width: "0%" },
-                            b: { width: "100%" },
-                        }}
                         initial={{ height: 0, opacity: 0 }}
                         animate={{ height: 500, opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}

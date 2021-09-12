@@ -14,9 +14,9 @@ const TextBlockWithHeader = (props) => {
                 <StyledResourcesContainer>
                     <h5>RESOURCES:</h5>
                     <ul>
-                        {resources.map((resource) => {
+                        {resources.map((resource, index) => {
                             return (
-                                <li>
+                                <li key={index}>
                                     <a
                                         href={resource.url}
                                         target="_blank"

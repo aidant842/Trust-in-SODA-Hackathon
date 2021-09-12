@@ -6,15 +6,29 @@ import styled from "styled-components";
 //Icons
 import { FaRegEye } from "react-icons/fa";
 
-const Widget = ({ onClick, style }) => {
+//Framer Motion
+import { motion, AnimatePresence } from "framer-motion";
+
+const Widget = ({ onClick, style, settingsAnimating }) => {
+    const animation = { right: 500 };
+
     return (
-        <StyledWidget onClick={onClick} style={style}>
-            <FaRegEye className="accessWidget" color="white" />
-        </StyledWidget>
+        <AnimatePresence>
+            <StyledWidget
+                onClick={onClick}
+                style={style}
+                initial={{ right: 0 }}
+                animate={settingsAnimating ? animation : {}}
+                exit={{ right: 0 }}
+                transition={{ delay: 0.15 }}
+            >
+                <FaRegEye className="accessWidget" color="white" />
+            </StyledWidget>
+        </AnimatePresence>
     );
 };
 
-const StyledWidget = styled.button`
+const StyledWidget = styled(motion.button)`
     height: 50px;
     width: 50px;
     background-color: var(--blue);
