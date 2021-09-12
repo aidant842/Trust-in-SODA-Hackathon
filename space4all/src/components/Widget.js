@@ -6,13 +6,9 @@ import styled from "styled-components";
 //Icons
 import { FaRegEye } from "react-icons/fa";
 
-//Images
-import widget from "../static/images/widget.png";
-
-const Widget = () => {
+const Widget = ({ onClick, style }) => {
     return (
-        <StyledWidget>
-            {/* <img src={widget} alt="Widget Icon" /> */}
+        <StyledWidget onClick={onClick} style={style}>
             <FaRegEye className="accessWidget" color="white" />
         </StyledWidget>
     );
