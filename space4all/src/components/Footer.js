@@ -120,6 +120,13 @@ const StyledFooter = styled.footer`
                 }
             }
         }
+        @media (max-width: 768px) {
+            display: block;
+            text-align: center;
+            li {
+                padding: 0.5rem 0;
+            }
+        }
     }
 `;
 export default Footer;
