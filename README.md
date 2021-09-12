@@ -20,9 +20,6 @@ Click [here](https://space4all-4d0b1.web.app/) for the deployed site.
 - Testing
 - Deployment
 - Credits / Acknowledgements
-    - Code
-    - Images
-    - Research
 
 ## About
 This project was created as part of the ‘Trust in SODA’ hackathon held in partnership with Code Institute. “The main goal of the project was to create a tool that helps employers create a truly accessible workspace, or improve their recruitment and onboarding experience for every person”. 
@@ -90,8 +87,18 @@ Colour was also an incredibly important part of the design considerations consid
 ![Colour Palette](/space4all/src/static/images/readme-images/palette.jpg)
 
 ### Features
+* Logo
+* Header
+* Footer (LinkedIn, GitHub, Logo)
+* Icons
+* Nav Bar (Hamburger)
+* Accessibility Icon
+* Back to Top
 
 ## Future Implementations
+* Interactive office map - drag and drop to design own office.
+* Good versus bad office image that could be hovewred over and highlight good and bad.
+* Create a shop with online resources so that accessible proucts could be bought on the site.
 
 ## Technologies used
 
@@ -121,22 +128,12 @@ Below is listed the programming languages, technologies, frameworks and resource
 -   Testing [checklist](https://geteasyqa.com/qa/test-website/)
 -   [pep8](http://pep8online.com/)
 
-### Manual testing
-
-### Automated testing
-
-### Errors
 
 ## Deployment
 
 ### Local Deployment
 
 ## Credits / Acknowledgements
-
-### Images
-
-
-### Research
 * Colour Palette Creation - [Allana Bailey's Colour-Blind-Project](https://github.com/allanabailey/color-blind-project1)
     * Medium Article by Allie Ofisher - Informative website on inclusive design with suggested colour palettes which inspired the use of the two main colours for the scheme of this project.
     * palett - Inclusive colour palette generator.
