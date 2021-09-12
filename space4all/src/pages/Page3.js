@@ -14,7 +14,7 @@ import checklistImg from "../static/images/checklist.png";
 const Page3 = () => {
     return (
         <>
-            <TextWithHeader heading="Heading 1" text="Paragraph 1" />
+            <TextWithHeader heading="Inclusive Office Checklist" text="" />
             <Image
                 imageSrc={checklistImg}
                 altText="Logo"
@@ -22,7 +22,7 @@ const Page3 = () => {
                 width="50%"
             />
             <HR />
-            <TextWithHeader heading="Heading 2" text="Paragraph 2" />
+            <TextWithHeader heading="Is your work place accessible and inclusive for the following types of disability?" text="Use the chcklist below to help identify the areas that you could improve and design considerations you could implement to improve the inclusiveness of your work space." />
             <Checklist />
         </>
     );

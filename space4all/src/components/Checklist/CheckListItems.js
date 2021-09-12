@@ -1,27 +1,42 @@
 export const CheckListItems = [
     {
-        label: "Item 1",
+        label: "Mobility and Physical",
         name: "item1",
         id: "item1",
     },
     {
-        label: "Item 2",
+        label: "Spinal Cord",
         name: "item2",
         id: "item2",
     },
     {
-        label: "Item 3",
+        label: "Head Injuries (Brain Disabilities)",
         name: "item3",
         id: "item3",
     },
     {
-        label: "Item 4",
+        label: "Vision",
         name: "item4",
         id: "item4",
     },
     {
-        label: "Item 5",
+        label: "Hearing",
         name: "item5",
         id: "item5",
+    },
+    {
+        label: "Cognitive/Learning",
+        name: "item6",
+        id: "item6",
+    },
+    {
+        label: "Psychological",
+        name: "item7",
+        id: "item7",
+    },
+    {
+        label: "Invisible",
+        name: "item8",
+        id: "item8",
     },
 ];
