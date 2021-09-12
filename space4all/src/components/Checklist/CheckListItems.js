@@ -19,4 +19,9 @@ export const CheckListItems = [
         name: "item4",
         id: "item4",
     },
+    {
+        label: "Item 5",
+        name: "item5",
+        id: "item5",
+    },
 ];

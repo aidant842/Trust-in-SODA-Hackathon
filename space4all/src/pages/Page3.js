@@ -9,7 +9,6 @@ import HR from "../components/UI/HR";
 import Checklist from "../components/Checklist/Checklist";
 
 //Images
-import logo from "../static/images/logo.png";
 import checklistImg from "../static/images/checklist.png";
 
 const Page3 = () => {
