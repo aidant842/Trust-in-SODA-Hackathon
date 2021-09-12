@@ -5,7 +5,7 @@ export const MenuItems = [
     },
     {
         title: "Design",
-        to: "/images",
+        to: "/design",
     },
     {
         title: "Checklist",
@@ -13,6 +13,6 @@ export const MenuItems = [
     },
     {
         title: "Accessories",
-        to: "/resources",
+        to: "/accessories",
     },
 ];
