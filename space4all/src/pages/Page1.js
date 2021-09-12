@@ -101,6 +101,61 @@ const Page1 = () => {
                     ]}
                 />
             </SplitContainer>
+
+            <StyledUl>
+                <li>
+                    A diverse workforce allows people with different
+                    personalities to collaborate while also challenging each
+                    other's ideas and opinions, resulting in increased
+                    creativity and new perspectives. The more diverse the
+                    brainstorming, the more diverse the solutions, the more
+                    diversely productive the team is.
+                </li>
+                <li>
+                    Employees with neurodiversity can have unique and powerful
+                    skill sets. Increased ability to recognize patterns or
+                    greater information retention, for example.{" "}
+                </li>
+                <li>
+                    Hiring out-of-market people can lead to a variety of new
+                    perspectives on the organization, industry, and policies
+                    that would not have been noticed otherwise. It may be useful
+                    in gaining a better insight and understanding of various
+                    businesses and identifying new customer markets.
+                </li>
+                <li>
+                    It might be difficult for others to feel included or fit in
+                    a job where the majority of workers are from the same
+                    background, ability, gender, etc. These hurdles can be taken
+                    down in a more diverse company, which fosters an inclusive
+                    culture and empowers all employees equally. Employees will
+                    perform better in an inclusive workplace, and there will be
+                    less turnover and absenteeism, resulting in higher employee
+                    retention than in a heterogeneous workforce.
+                </li>
+                <li>
+                    Providing accommodation services for those with disabilities
+                    can help to improve efficiency and reduce time to achieve
+                    results. Accommodations include well designed physical
+                    workplace layout, accessories such as noise cancelling
+                    earphones, workstations with digital services.
+                </li>
+                <li>
+                    When companies are shown to hire a diverse team, it expands
+                    recruitment resources, which improve a companies brand's
+                    reputation. Diversity binds you to the people around you and
+                    makes you more relatable to a wider range of people opening
+                    up the recruitment pool.
+                </li>
+                <li>
+                    Companies that embrace these diverse policies profit
+                    financially. These could result from a decrease in legal
+                    action taken as a consequence of the lack in services being
+                    delivered both physically and online. Compliancy needs to be
+                    ensured whether it is by meeting layout criteria or adapting
+                    websites to suit the accessibility and diversity.{" "}
+                </li>
+            </StyledUl>
         </>
     );
 };
@@ -108,6 +163,12 @@ const Page1 = () => {
 const TextWithHeader = styled(TextBlockWithHeader)`
     text-align: center;
     width: 100%;
+`;
+
+const StyledUl = styled.ul`
+    li {
+        padding: 1.5rem 0;
+    }
 `;
 
 export default Page1;
