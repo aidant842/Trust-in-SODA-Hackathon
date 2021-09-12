@@ -20,19 +20,18 @@ Click [here](https://space4all-4d0b1.web.app/) for the deployed site.
 - [**UX**](#UX)
     - User Stories
     - Design
-- [**Features**](#Features)
-    - [Future features](#Future-updates)
+    - Features
+- [**Future Implementations**](#Future-implementations)
 - [**Technologies used**](#Technologies-used)
 - [**Testing**](#Testing)
-    - [Manual Testing](#Testing)
-    - [Automated Testing](#Automated-Testing)
-    - [Errors](#Errors)   
-- [**Code Notes**](#Code-Notes)
+    - Manual Testing
+    - Automated Testing
+    - Errors 
 - [**Deployment**](#Deployment)
-- [**Credits**](#Deployment)
-    - [Code](#Code)
-    - [Images](#Images)
-- [**Acknowledgements**](#Acknowledgements)
+- [**Credits / Acknowledgements**](#Credits)
+    - Code
+    - Images
+    - Research
 
 ## About
 This project was created as part of the ‘Trust in SODA’ hackathon held in partnership with Code Institute. “The main goal of the project was to create a tool that helps employers create a truly accessible workspace, or improve their recruitment and onboarding experience for every person”. 
@@ -68,11 +67,21 @@ Within the team there were a variety of different skill sets, expertise and expe
 ### Polls and Wireframes
 Once the topic had been chosen, we created a rough outline of the page contents and mock ups were first created by pen and paper. Where there were multiple layout options and considerations, polls were undertaken and discussion had to come up with a final decision.
 
-[ATTACH IMAGES OF PEN AND PAPER MOCK UPS]
+![Paper and Pen Mockups](/space4all/src/static/images/readme-images/mockup.jpg)
 
 Once the final decision had been made on the mock ups that most closely resembled the layout and design of the website, more hi-fi mock ups were created in word documents to allow the team to edit them, then a final wireframe was created in Balsamiq. Some changes were made along the way but these were our main guidelines.
 
-[ATTACH BALSAMIQ WIREFRAMES]
+* Page 1 Wireframe  
+![Page 1 Wireframe](/space4all/src/static/images/readme-images/page1wireframe.jpg)
+
+* Page 2 Wireframe  
+![Page 2 Wireframe](/space4all/src/static/images/readme-images/page2wireframe.jpg)
+
+* Page 3 Wireframe  
+![Page 3 Wireframe](/space4all/src/static/images/readme-images/page3wireframe.jpg)
+
+* Page 4 Wireframe  
+![Page 4 Wireframe](/space4all/src/static/images/readme-images/page4wireframe.jpg)
 
 
 ## UX
@@ -83,6 +92,11 @@ Once the final decision had been made on the mock ups that most closely resemble
 * As an employer/company that has a disabled employee, I want to find information on office space and accessories, so that I can put in place adjustments to help my employee.
 
 ### Design
+It was important to ensure that the website was incredibly accessible considering the nature of the topic and the likely user. Therefore it was important to design it ensuring it was clear and concise throughout. We ensured there was always a 1/3 style layout in three columns for consistency, whilst allowing these elements to stack on one another if the screen size was smaller. 
+
+Colour was also an incredibly important part of the design considerations considering there are people with colour vision deficiencies. An inclusive colour palette was used that had been tested against various online resources listed in the credits below and was seen to be appropriate for the four types of colour vision deficiencies.
+
+![Colour Palette](/space4all/src/static/images/readme-images/palette.jpg)
 
 ## Features
 
