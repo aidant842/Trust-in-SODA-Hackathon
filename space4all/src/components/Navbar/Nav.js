@@ -33,7 +33,8 @@ const Nav = () => {
                             <Link
                                 to={item.to}
                                 style={{
-                                    color: pathname === item.to ? dblueish : blue,
+                                    color:
+                                        pathname === item.to ? dblueish : blue,
                                 }}
                             >
                                 {item.title}
@@ -91,9 +92,9 @@ const StyledNav = styled.nav`
         padding-left: 10rem;
         position: relative;
     }
-    @media (max-width: 1300px) {
+    /* @media (max-width: 1300px) {
         display: none;
-    }
+    } */
 `;
 
 const Line = styled(motion.div)`
@@ -103,9 +104,9 @@ const Line = styled(motion.div)`
     position: absolute;
     bottom: -60%;
     left: 50%;
-    @media (max-width: 1300px) {
+    /* @media (max-width: 1300px) {
         left: 0%;
-    }
+    } */
 `;
 
 export default Nav;

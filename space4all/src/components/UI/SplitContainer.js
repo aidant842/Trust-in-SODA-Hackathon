@@ -3,13 +3,18 @@ import React from "react";
 //Styled Components
 import styled from "styled-components";
 
-const SplitContainer = ({ children, className }) => {
-    return <StyledHalfWidth className={className}>{children}</StyledHalfWidth>;
+const SplitContainer = ({ className, breakpoint, children }) => {
+    return (
+        <StyledHalfWidth className={className} breakpoint={breakpoint}>
+            {children}
+        </StyledHalfWidth>
+    );
 };
 const StyledHalfWidth = styled.div`
     display: flex;
     margin: 2rem 0 2rem 0;
-    @media (max-width: 1300px) {
+    @media (max-width: ${(props) =>
+            props.breakpoint ? props.breakpoint : "1300px"}) {
         display: block;
     }
 `;

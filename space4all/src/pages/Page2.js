@@ -15,7 +15,6 @@ import logo from "../static/images/logo.png";
 import poor from "../static/images/poor.png";
 import good from "../static/images/good.png";
 import narrowVs from "../static/images/narrowVs.png";
-import wideVs from "../static/images/wideVs.png";
 
 //Custom Hooks
 import useWindowDimensions from "../Hooks/useWindowDimenstions";
@@ -26,24 +25,24 @@ const Page2 = () => {
     return (
         <>
             <h2>Heading</h2>
-            <SplitContainer>
+            <SplitContainer breakpoint="576px">
                 <Image
                     imageSrc={good}
                     altText="Logo"
                     height="auto"
-                    width={width >= 1300 ? "65%" : "35%"}
+                    width={width >= 576 ? "65%" : "35%"}
                 />
                 <Image
                     imageSrc={narrowVs}
                     altText="Logo"
                     height="auto"
-                    width={width >= 1300 ? "65%" : "35%"}
+                    width={width >= 576 ? "65%" : "35%"}
                 />
                 <Image
                     imageSrc={poor}
                     altText="Logo"
                     height="auto"
-                    width={width >= 1300 ? "65%" : "35%"}
+                    width={width >= 576 ? "65%" : "35%"}
                 />
             </SplitContainer>
             <HR />
