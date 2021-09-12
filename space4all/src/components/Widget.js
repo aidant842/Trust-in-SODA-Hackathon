@@ -6,9 +6,13 @@ import styled from "styled-components";
 //Icons
 import { FaRegEye } from "react-icons/fa";
 
+//Images
+import widget from "../static/images/widget.png";
+
 const Widget = () => {
     return (
         <StyledWidget>
+            {/* <img src={widget} alt="Widget Icon" /> */}
             <FaRegEye className="accessWidget" color="white" />
         </StyledWidget>
     );
@@ -27,6 +31,10 @@ const StyledWidget = styled.button`
     z-index: 10;
     border: none;
     cursor: pointer;
+    img {
+        width: 60px;
+        height: 60px;
+    }
     @media (max-width: 1300px) {
         top: 81.5px;
     }

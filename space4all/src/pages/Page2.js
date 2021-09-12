@@ -15,7 +15,9 @@ import logo from "../static/images/logo.png";
 import poor from "../static/images/poor.png";
 import good from "../static/images/good.png";
 import narrowVs from "../static/images/narrowVs.png";
-import wideVs from "../static/images/wideVs.png";
+import corridoor from "../static/images/corridoor.png";
+import lighting from "../static/images/lighting.png";
+import doorHandle from "../static/images/doorHandle.png";
 
 //Custom Hooks
 import useWindowDimensions from "../Hooks/useWindowDimenstions";
@@ -26,24 +28,24 @@ const Page2 = () => {
     return (
         <>
             <h2>Heading</h2>
-            <SplitContainer>
+            <SplitContainer breakpoint="576px">
                 <Image
                     imageSrc={good}
                     altText="Logo"
                     height="auto"
-                    width={width >= 1300 ? "65%" : "35%"}
+                    width={width >= 576 ? "65%" : "35%"}
                 />
                 <Image
                     imageSrc={narrowVs}
                     altText="Logo"
                     height="auto"
-                    width={width >= 1300 ? "65%" : "35%"}
+                    width={width >= 576 ? "65%" : "35%"}
                 />
                 <Image
                     imageSrc={poor}
                     altText="Logo"
                     height="auto"
-                    width={width >= 1300 ? "65%" : "35%"}
+                    width={width >= 576 ? "65%" : "35%"}
                 />
             </SplitContainer>
             <HR />
@@ -53,28 +55,28 @@ const Page2 = () => {
             <TextWithHeader heading="Heading 2" text="paragraph 2" />
             <Image imageSrc={logo} altText="Logo" height="auto" width="100%" />
             <HR />
-            <SplitContainer>
+            <SplitContainer breakpoint="576px">
                 <ImageWithHeader
-                    imageSrc={logo}
+                    imageSrc={corridoor}
                     altText="Logo"
-                    height="50px"
-                    width="50px"
+                    height="auto"
+                    width={width >= 576 ? "75%" : "65%"}
                     heading="Heading 1"
                     text="paragraph 1"
                 />
                 <ImageWithHeader
-                    imageSrc={logo}
+                    imageSrc={lighting}
                     altText="Logo"
-                    height="50px"
-                    width="50px"
+                    height="auto"
+                    width={width >= 576 ? "75%" : "65%"}
                     heading="Heading 2"
                     text="paragraph 2"
                 />
                 <ImageWithHeader
-                    imageSrc={logo}
+                    imageSrc={doorHandle}
                     altText="Logo"
-                    height="50px"
-                    width="50px"
+                    height="auto"
+                    width={width >= 576 ? "75%" : "65%"}
                     heading="Heading 3"
                     text="paragraph 3"
                 />
