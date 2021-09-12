@@ -1,5 +1,5 @@
 export const Products = [{
-        imageSrc: "../static/images/reading-guide-ruler.png",
+        imageSrc: "reading-guide-ruler.png",
         altText: "An icon image of a book open as if being read.",
         imgWidth: "50px",
         imgHeight: "50px",
@@ -31,11 +31,27 @@ export const Products = [{
         text: "Install ramps where stairs and steps exist.",
     },
     {
-        imageSrc: "ramp.png",
-        altText: "An icon image depicting a ramp.",
+        imageSrc: "digitalbrowser.png",
+        altText: "An icon image depicting a computer screen with a software icon on it.",
         imgWidth: "50px",
         imgHeight: "50px",
-        heading: "Ramps",
-        text: "Install ramps where stairs and steps exist.",
+        heading: "Digital Workstation",
+        text: "Setting up computers with additional supports such as text to voice readers, and zoom features will benefit those with visual and hearing disabilities.",
+    },
+    {
+        imageSrc: "employeehandbook.png",
+        altText: "An icon image depicting a book with the title 'Employee Accessibility Handbook'.",
+        imgWidth: "50px",
+        imgHeight: "50px",
+        heading: "Access Handbook",
+        text: "An access handbook is an internal document that should be familiarized by all employees, including management, maintenance, and new hires. Its objective is to provide a simple manner of describing and explaining the features and facilities of a structure that must be maintained and/or enhanced in order to ensure that everyone has access to it.",
+    },
+    {
+        imageSrc: "braille.png",
+        altText: "An icon image depicting a sign with the braille format beneath.",
+        imgWidth: "50px",
+        imgHeight: "50px",
+        heading: "Braille Stickers / Plates",
+        text: "Use braille stickers on buttons, equipment and product labels to identify their purpose. This will aid blind users and those with visibility issues. These are stickers with raised indentations. They can be custom made with metal or using embossed techniques. Use in spaces like the kitchen area as well as this is often and area overlooked.",
     },
 ];
