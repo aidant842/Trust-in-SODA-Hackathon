@@ -31,12 +31,12 @@ import { AnimatePresence } from "framer-motion";
 import styled from "styled-components";
 
 //Cursors
-import cursor from "./static/images/cursor.png";
+import cursor from "./static/images/largeCursor.png";
 
 function App() {
     //Variables
     const location = useLocation();
-    const { screenWidth } = useWindowDimensions();
+    const { screenWidth, screenScroll } = useWindowDimensions();
 
     //State
     const [showSettings, setShowSettings] = useState();
@@ -125,7 +125,7 @@ function App() {
                     </Route>
                 </Switch>
             </Container>
-            <BttButton onClick={bttHandler} />
+            {screenScroll >= 300 ? <BttButton onClick={bttHandler} /> : ""}
             <Footer />
         </StyledApp>
     );

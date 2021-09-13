@@ -6,9 +6,11 @@ const useWindowDimensions = () => {
     const getWindowDimensions = useCallback(() => {
         const screenWidth = hasWindow ? window.innerWidth : null;
         const screenHeight = hasWindow ? window.innerHeight : null;
+        const screenScroll = hasWindow ? window.pageYOffset : null;
         return {
             screenWidth,
             screenHeight,
+            screenScroll,
         };
     }, [hasWindow]);
 
@@ -23,7 +25,11 @@ const useWindowDimensions = () => {
             };
 
             window.addEventListener("resize", handleResize);
-            return () => window.removeEventListener("resize", handleResize);
+            window.addEventListener("scroll", handleResize);
+            return () => {
+                window.removeEventListener("resize", handleResize);
+                window.removeEventListener("scroll", handleResize);
+            };
         }
     }, [hasWindow, getWindowDimensions]);
 
