@@ -128,6 +128,11 @@ const Page1 = () => {
                     ]}
                 />
             </SplitContainer>
+            
+            <TextWithHeader
+                    heading=""
+                    text="Below we highlight ways to create an invlusive workspaceother than the physical space which are addressed in the Design and Accessories pages of the site."
+            />
 
             <StyledUl>
                 <li>
