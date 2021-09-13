@@ -18,10 +18,19 @@ import inclusionDiversityWorkplace from "../static/images/inclusionDiversityWork
 //Custom Hooks
 import useWindowDimensions from "../Hooks/useWindowDimenstions";
 
+//Animations
+import { pageAnimation } from "../components/animation";
+import { motion } from "framer-motion";
+
 const Page1 = () => {
     const { screenWidth } = useWindowDimensions();
     return (
-        <>
+        <motion.div
+            variants={pageAnimation}
+            initial="hidden"
+            animate="show"
+            exit="exit"
+        >
             <SplitContainer ariaLabel="A paragraph and video about how to address accessibility in the workplace">
                 <TextWithHeader
                     heading="Addressing Workplace Accessibility"
@@ -185,7 +194,7 @@ const Page1 = () => {
                     websites to suit the accessibility and diversity.{" "}
                 </li>
             </StyledUl>
-        </>
+        </motion.div>
     );
 };
 

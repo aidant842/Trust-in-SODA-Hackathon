@@ -77,6 +77,7 @@ function App() {
         setFontSize(1.2);
         setHighlightLinks(false);
         setLargeCursor(false);
+        setDarkMode(false);
     };
 
     const bttHandler = () => {
@@ -95,12 +96,16 @@ function App() {
             darkMode={darkMode}
         >
             <GlobalStyle />
-            {screenWidth >= 1300 ? <Nav /> : <MobileNav />}
+            {screenWidth >= 1300 ? (
+                <Nav bttHandler={bttHandler} />
+            ) : (
+                <MobileNav bttHandler={bttHandler} />
+            )}
             <Widget
                 onClick={showSettingsHandler}
                 settingsAnimating={settingsAnimating}
             />
-            <AnimatePresence>
+            <AnimatePresence exitBeforeEnter>
                 {showSettings && (
                     <AcessibilitySettings
                         showSettingsHandler={showSettingsHandler}
@@ -116,22 +121,24 @@ function App() {
                     />
                 )}
             </AnimatePresence>
-            <Container>
-                <Switch location={location} key={location.pathname}>
-                    <Route path="/" exact>
-                        <Page1 />
-                    </Route>
-                    <Route path="/design" exact>
-                        <Page2 />
-                    </Route>
-                    <Route path="/checklist">
-                        <Page3 />
-                    </Route>
-                    <Route path="/accessories" exact>
-                        <Page4 />
-                    </Route>
-                </Switch>
-            </Container>
+            <AnimatePresence exitBeforeEnter>
+                <Container>
+                    <Switch location={location} key={location.pathname}>
+                        <Route path="/" exact>
+                            <Page1 />
+                        </Route>
+                        <Route path="/design" exact>
+                            <Page2 />
+                        </Route>
+                        <Route path="/checklist">
+                            <Page3 />
+                        </Route>
+                        <Route path="/accessories" exact>
+                            <Page4 />
+                        </Route>
+                    </Switch>
+                </Container>
+            </AnimatePresence>
             {screenScroll >= 300 ? (
                 <BttButton onClick={bttHandler} width="50px" />
             ) : (

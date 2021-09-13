@@ -14,7 +14,7 @@ import { MenuItems } from "./MenuItems";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
 
-const MobileNav = () => {
+const MobileNav = ({ bttHandler }) => {
     const { pathname } = useLocation();
     // variables
     const green = "#BDD9C0";
@@ -27,13 +27,19 @@ const MobileNav = () => {
             return !prevState;
         });
     };
+    const openMenuHandlerWithScroll = () => {
+        setOpen((prevState) => {
+            return !prevState;
+        });
+        bttHandler();
+    };
 
     return (
         <StyledNav>
             <h1>
                 <Link to="/">
                     <img
-                        onClick={openMenuHandler}
+                        onClick={openMenuHandlerWithScroll}
                         src={logo}
                         alt="Space for All Logo"
                         id="logo"
@@ -71,7 +77,7 @@ const MobileNav = () => {
                                                     ? green
                                                     : blue,
                                         }}
-                                        onClick={openMenuHandler}
+                                        onClick={openMenuHandlerWithScroll}
                                     >
                                         {item.title}
                                     </Link>

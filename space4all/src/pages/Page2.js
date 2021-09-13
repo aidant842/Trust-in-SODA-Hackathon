@@ -30,11 +30,20 @@ import parking from "../static/images/parking.png";
 //Custom Hooks
 import useWindowDimensions from "../Hooks/useWindowDimenstions";
 
+//Animations
+import { pageAnimation } from "../components/animation";
+import { motion } from "framer-motion";
+
 const Page2 = () => {
     const { screenWidth } = useWindowDimensions();
 
     return (
-        <>
+        <motion.div
+            variants={pageAnimation}
+            initial="hidden"
+            animate="show"
+            exit="exit"
+        >
             <h4>Creating an Inclusive and Accessible Office Space</h4>
             <SplitContainer ariaLabel="Three images to begin outlining the good and poor practices of an accessible workspace" breakpoint="576px">
                 <Image
@@ -168,7 +177,7 @@ const Page2 = () => {
                     text="Where possible, it is good to having parking nearby or on company premises. It is ideal to have designated disabled parking bays closest to the office to minimise the commute and journey for employees with a disability. Ensure that the car park is well lit and safe for all users with wide parking bays, clear directions and safe pathways."
                 />
             </SplitContainer>
-        </>
+        </motion.div>
     );
 };
 

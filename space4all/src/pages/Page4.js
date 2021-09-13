@@ -13,13 +13,21 @@ import accessories_header from "../static/images/accessories_header.png";
 import styled from "styled-components";
 
 //Custom Hooks
-
 import useWindowDimensions from "../Hooks/useWindowDimenstions";
+
+//Animations
+import { pageAnimation } from "../components/animation";
+import { motion } from "framer-motion";
 
 const Page4 = () => {
     const { screenWidth } = useWindowDimensions();
     return (
-        <>
+        <motion.div
+            variants={pageAnimation}
+            initial="hidden"
+            animate="show"
+            exit="exit"
+        >
             <Image
                 imageSrc={accessories_header}
                 altText="A banner displaying all of the different accessories and products listed in more detail below."
@@ -46,7 +54,7 @@ const Page4 = () => {
                     />
                 );
             })}
-        </>
+        </motion.div>
     );
 };
 
