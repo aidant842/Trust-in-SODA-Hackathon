@@ -89,7 +89,7 @@ Colour was also an incredibly important part of the design considerations consid
 ### Features
 * Logo - The custom logo of the project displays in the top left hands side of the header and the bottom left of the footer.  Numerous different logos were created, at different sizes dependent on usage. A play was made on the word ‘space’ intentionally making it wider with a larger kerring/spacing value. The icon is made up of wheelchair symbol, the eye for visual and with the head of the person is a settings icon to recognise neuro. The font used is Atkinson Hyperlegible from the Braille Institute. Colour palette based on colour blind reaseach.
 
-![Logo Without Text](/space4all/src/static/images/logo.png)  
+![Logo Without Text](/space4all/src/static/images/readme-images/logo-bg.png)  
 
 ![Logo Header](/space4all/src/static/images/logo-title.png)  
 
@@ -134,14 +134,16 @@ Colour was also an incredibly important part of the design considerations consid
 
 Below is listed the programming languages, technologies, frameworks and resources used for this project.
 
--   **HTML5**
+-   **JSX**
+-   **React**
+-   **NPM**
 -   **CSS3**
 -   **Vanilla JS**
--   **J Query**
 -   **Markdown**
 -   **Git** for version control.
 -   **[Github](https://github.com/)** to hold my project.
 -   **[FontAwesome](https://fontawesome.com/)** for icons.
+-   **[ReactIcons](https://react-icons.github.io/react-icons/)** for icons.
 -   **Google Chrome/FireFox/Edge/Safari**
 -   **Developer tools for chrome/FireFox/Edge**
 -   **[Amiresponsive](http://ami.responsivedesign.is/)**
@@ -157,7 +159,6 @@ Below is listed the programming languages, technologies, frameworks and resource
 -   [CSS validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
 -   [JsHint](https://jshint.com)
 -   Testing [checklist](https://geteasyqa.com/qa/test-website/)
--   [pep8](http://pep8online.com/)
 
 ### Lighthouse Reports
 We ran a lighthouse report for each page and worked consistently to try to identify anything causing the score to be lowered and altered the pages as we went to ensure we maximised the report results.
