@@ -149,7 +149,7 @@ Below is listed the programming languages, technologies, frameworks and resource
 -   **[StackOverFlow](https://stackoverflow.com/)** for help with some issues we ran into
 -   **[Slack](https://slack.com/)**
 -   **[Grammarly](https://www.grammarly.com/)** to correct grammar and spelling mistakes.
--   **[Firebase](https://firebase.google.com/) Hosting the web app.
+-   **[Firebase](https://firebase.google.com/)** Hosting the web app.
 
 ## Testing
 
@@ -159,6 +159,8 @@ Below is listed the programming languages, technologies, frameworks and resource
 -   Testing [checklist](https://geteasyqa.com/qa/test-website/)
 -   [pep8](http://pep8online.com/)
 
+### Lighthouse Reports
+We ran a lighthouse report for each page and worked consistently to try to identify anything causing the score to be lowered and altered the pages as we went to ensure we maximised the report results.
 
 ## Deployment
 This project was developed in numerous different IDEs where everything was committed and pushed to [GitHub Repository](https://github.com/aidant842/Trust-in-SODA-Hackathon). The Code Institute offered a template which could then be pulled and used for the main structure of the repository, and created into a [GitPod](https://gitpod.io/) repository by clicking the green "GitPod" button. Please see the process followed below for deployment after the repository had been created:
