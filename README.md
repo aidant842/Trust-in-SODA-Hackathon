@@ -2,36 +2,24 @@
 
 Click [here](https://space4all-4d0b1.web.app/) for the deployed site.
 
-[INSERT IMAGE OF SITE ACROSS DeVICES]
+![Image of Website Across Devices](/space4all/src/static/images/readme-images/websiteexample.png)
 
-<p align="center">
-  <img width="40%" src="">
-</p>
- 
-<p align="center"><a href="" target = "_blank"></a></p>
- 
 ## Table of Contents
  
-- [**About**](#About)
-- [**Planning**](#Planning)
+- About
+- Planning
     - Choosing a Topic
     - Team Roles
     - Polls and Wireframes
-- [**UX**](#UX)
+- UX
     - User Stories
     - Design
     - Features
-- [**Future Implementations**](#Future-implementations)
-- [**Technologies used**](#Technologies-used)
-- [**Testing**](#Testing)
-    - Manual Testing
-    - Automated Testing
-    - Errors 
-- [**Deployment**](#Deployment)
-- [**Credits / Acknowledgements**](#Credits)
-    - Code
-    - Images
-    - Research
+- Future Implementations
+- Technologies used
+- Testing
+- Deployment
+- Credits / Acknowledgements
 
 ## About
 This project was created as part of the ‘Trust in SODA’ hackathon held in partnership with Code Institute. “The main goal of the project was to create a tool that helps employers create a truly accessible workspace, or improve their recruitment and onboarding experience for every person”. 
@@ -99,8 +87,18 @@ Colour was also an incredibly important part of the design considerations consid
 ![Colour Palette](/space4all/src/static/images/readme-images/palette.jpg)
 
 ### Features
+* Logo
+* Header
+* Footer (LinkedIn, GitHub, Logo)
+* Icons
+* Nav Bar (Hamburger)
+* Accessibility Icon
+* Back to Top
 
 ## Future Implementations
+* Interactive office map - drag and drop to design own office.
+* Good versus bad office image that could be hovewred over and highlight good and bad.
+* Create a shop with online resources so that accessible proucts could be bought on the site.
 
 ## Technologies used
 
@@ -130,24 +128,12 @@ Below is listed the programming languages, technologies, frameworks and resource
 -   Testing [checklist](https://geteasyqa.com/qa/test-website/)
 -   [pep8](http://pep8online.com/)
 
-### Manual testing
-
-### Automated testing
-
-### Errors
 
 ## Deployment
 
 ### Local Deployment
 
 ## Credits / Acknowledgements
-
-### Code
-
-### Images
-
-
-### Research
 * Colour Palette Creation - [Allana Bailey's Colour-Blind-Project](https://github.com/allanabailey/color-blind-project1)
     * Medium Article by Allie Ofisher - Informative website on inclusive design with suggested colour palettes which inspired the use of the two main colours for the scheme of this project.
     * palett - Inclusive colour palette generator.
@@ -160,6 +146,10 @@ Below is listed the programming languages, technologies, frameworks and resource
     * [Wonolo Article](www.wonolo.com/blog/6-benefits-of-having-a-diverse-workforce/)
 * Types of Diversity 
     * [Diverstiy Article, builtin](https://builtin.com/diversity-inclusion/types-of-diversity-in-the-workplace)
+* General Research
+    * [People Management](https://www.peoplemanagement.co.uk/voices/comment/how-to-use-braille-signs-improve-accessibility-workplace#gref)
+    * [Anuprayaas](https://anuprayaas.org/8-ways-to-make-a-workplace-accessible-disability-friendly/)
+    * [Oxford Dictionary](https://www.oxfordlearnersdictionaries.com/)
 
 
 

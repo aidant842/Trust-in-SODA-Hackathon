@@ -11,7 +11,6 @@ import HR from "../components/UI/HR";
 import ImageWithHeader from "../components/ImageWithHeader";
 
 //Images
-import logo from "../static/images/logo.png";
 import poor from "../static/images/poor.png";
 import good from "../static/images/good.png";
 import narrowVs from "../static/images/narrowVs.png";

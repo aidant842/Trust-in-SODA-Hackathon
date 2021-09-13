@@ -4,15 +4,15 @@ export const MenuItems = [
         to: "/",
     },
     {
-        title: "Images",
-        to: "/images",
+        title: "Design",
+        to: "/design",
     },
     {
         title: "Checklist",
         to: "/checklist",
     },
     {
-        title: "Resources",
-        to: "/resources",
+        title: "Accessories",
+        to: "/accessories",
     },
 ];

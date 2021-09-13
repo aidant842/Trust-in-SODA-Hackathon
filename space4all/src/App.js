@@ -114,13 +114,13 @@ function App() {
                     <Route path="/" exact>
                         <Page1 />
                     </Route>
-                    <Route path="/images" exact>
+                    <Route path="/design" exact>
                         <Page2 />
                     </Route>
                     <Route path="/checklist">
                         <Page3 />
                     </Route>
-                    <Route path="/resources" exact>
+                    <Route path="/accessories" exact>
                         <Page4 />
                     </Route>
                 </Switch>
