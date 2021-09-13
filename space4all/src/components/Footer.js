@@ -10,7 +10,7 @@ const Footer = () => {
         <StyledFooter>
             <ul>
                 <li>
-                    <img src={logoTitle} alt="Space4Ever Logo"></img>
+                    <img src={logoTitle} alt="Space4All Logo"></img>
                 </li>
                 <li className="footerIcon">
                     <a
