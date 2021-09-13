@@ -44,6 +44,7 @@ function App() {
     const [settingsAnimating, setSettingsAnimating] = useState(false);
     const [highlightLinks, setHighlightLinks] = useState(false);
     const [largeCursor, setLargeCursor] = useState(false);
+    const [darkMode, setDarkMode] = useState(false);
 
     //Handlers
 
@@ -68,6 +69,10 @@ function App() {
         setLargeCursor((prevState) => !prevState);
     };
 
+    const darkModeHandler = () => {
+        setDarkMode((prevState) => !prevState);
+    };
+
     const resetSettingsHandler = () => {
         setFontSize(1.2);
         setHighlightLinks(false);
@@ -87,6 +92,7 @@ function App() {
             highlightLinks={highlightLinks}
             fontSize={fontSize}
             largeCursor={largeCursor}
+            darkMode={darkMode}
         >
             <GlobalStyle />
             {screenWidth >= 1300 ? <Nav /> : <MobileNav />}
@@ -105,6 +111,8 @@ function App() {
                         largeCursorHandler={largeCursorHandler}
                         highlightLinks={highlightLinks}
                         largeCursor={largeCursor}
+                        darkModeHandler={darkModeHandler}
+                        darkMode={darkMode}
                     />
                 )}
             </AnimatePresence>
@@ -135,6 +143,8 @@ function App() {
 }
 
 const StyledApp = styled.div`
+    background-color: ${(props) => (props.darkMode ? "#121212" : "white")};
+    color: ${(props) => (props.darkMode ? "white" : "black")};
     font-size: ${(props) => `${props.fontSize}rem`};
     line-height: ${(props) => `calc(1rem * ${props.fontSize * 1.5})`};
     letter-spacing: ${(props) => `calc(0.1rem * ${props.fontSize})`};
