@@ -9,9 +9,10 @@ import styled from "styled-components";
 //React Icons
 import { TiArrowUpThick } from "react-icons/ti";
 
-const BttButton = ({ onClick }) => {
+const BttButton = ({ onClick, width }) => {
     return (
         <StyledButton
+            width={width}
             text={<TiArrowUpThick className="bttArrow" />}
             onClick={onClick}
         />
@@ -22,8 +23,6 @@ const StyledButton = styled(Button)`
     position: fixed;
     right: 15px;
     bottom: 50px;
-    width: 50px;
-    height: 50px;
     cursor: pointer;
 
     &:hover {

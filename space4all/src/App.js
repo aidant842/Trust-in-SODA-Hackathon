@@ -66,7 +66,6 @@ function App() {
 
     const largeCursorHandler = () => {
         setLargeCursor((prevState) => !prevState);
-        console.log("Large Cursor!");
     };
 
     const resetSettingsHandler = () => {
@@ -76,7 +75,6 @@ function App() {
     };
 
     const bttHandler = () => {
-        console.log("btt clicked");
         window.scrollTo({
             top: 0,
             behavior: "smooth",
@@ -126,7 +124,11 @@ function App() {
                     </Route>
                 </Switch>
             </Container>
-            {screenScroll >= 300 ? <BttButton onClick={bttHandler} /> : ""}
+            {screenScroll >= 300 ? (
+                <BttButton onClick={bttHandler} width="50px" />
+            ) : (
+                ""
+            )}
             <Footer />
         </StyledApp>
     );
