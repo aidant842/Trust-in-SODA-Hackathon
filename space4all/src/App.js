@@ -31,12 +31,12 @@ import { AnimatePresence } from "framer-motion";
 import styled from "styled-components";
 
 //Cursors
-/* import cursor from "./static/images/cursor.png"; */
+import cursor from "./static/images/cursor.png";
 
 function App() {
     //Variables
     const location = useLocation();
-    const { width } = useWindowDimensions();
+    const { screenWidth } = useWindowDimensions();
 
     //State
     const [showSettings, setShowSettings] = useState();
@@ -90,7 +90,7 @@ function App() {
             largeCursor={largeCursor}
         >
             <GlobalStyle />
-            {width >= 1300 ? <Nav /> : <MobileNav />}
+            {screenWidth >= 1300 ? <Nav /> : <MobileNav />}
             <Widget
                 onClick={showSettingsHandler}
                 settingsAnimating={settingsAnimating}
@@ -136,10 +136,8 @@ const StyledApp = styled.div`
     line-height: ${(props) => `calc(1rem * ${props.fontSize * 1.5})`};
     letter-spacing: ${(props) => `calc(0.1rem * ${props.fontSize})`};
 
-    /* cursor: ${(props) =>
-        props.largeCursor
-            ? "url(/static/images/cursor.png), auto"
-            : "cursor"}; */
+    cursor: ${(props) =>
+        props.largeCursor ? `url(${cursor}), auto` : "cursor"};
 
     a {
         background-color: ${(props) =>

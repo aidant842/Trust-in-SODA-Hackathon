@@ -18,13 +18,13 @@ import styled from "styled-components";
 import useWindowDimensions from "../Hooks/useWindowDimenstions";
 
 const Page4 = () => {
-    const { width } = useWindowDimensions();
+    const { screenWidth } = useWindowDimensions();
     return (
         <>
             <Image
                 imageSrc={accessories_header}
                 altText="A banner displaying all of the different accessories and products listed in more detail below."
-                width={width >= 768 ? "50%" : "80%"}
+                width={screenWidth >= 768 ? "50%" : "80%"}
                 height="auto"
             />
             <HR />

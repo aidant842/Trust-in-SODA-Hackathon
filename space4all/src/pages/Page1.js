@@ -18,7 +18,7 @@ import inclusionDiversityWorkplace from "../static/images/inclusionDiversityWork
 import useWindowDimensions from "../Hooks/useWindowDimenstions";
 
 const Page1 = () => {
-    const { width } = useWindowDimensions();
+    const { screenWidth } = useWindowDimensions();
     return (
         <>
             <SplitContainer>
@@ -82,19 +82,19 @@ const Page1 = () => {
                     imageSrc={diversity}
                     altText="Image containing the Oxford Dictionary definition of diversity."
                     height="auto"
-                    width={width >= 1300 ? "100%" : "85%"}
+                    width={screenWidth >= 1300 ? "100%" : "85%"}
                 />
                 <Image
                     imageSrc={inclusion}
                     altText="Image containing the Oxford Dictionary definition of inclusion."
                     height="auto"
-                    width={width >= 1300 ? "100%" : "85%"}
+                    width={screenWidth >= 1300 ? "100%" : "85%"}
                 />
                 <Image
                     imageSrc={equality}
                     altText="Image containing the Oxford Dictionary definition of equality."
                     height="auto"
-                    width={width >= 1300 ? "100%" : "85%"}
+                    width={screenWidth >= 1300 ? "100%" : "85%"}
                 />
             </SplitContainer>
             <HR />
@@ -103,7 +103,7 @@ const Page1 = () => {
                     imageSrc={benefitsHomepage}
                     altText="Icon image of a bar chart to depict increasing business and productivity and represent the statistics below."
                     height="auto"
-                    width={width >= 1300 ? "100%" : "85%"}
+                    width={screenWidth >= 1300 ? "100%" : "85%"}
                 />
                 <TextWithHeader
                     heading="BENEFITS OF A DIVERSE AND INCLUSIVE WORKFORCE"
