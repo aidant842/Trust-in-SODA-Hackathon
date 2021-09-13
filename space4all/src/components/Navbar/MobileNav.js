@@ -32,7 +32,12 @@ const MobileNav = () => {
         <StyledNav>
             <h1>
                 <Link to="/">
-                    <img src={logo} alt="Space for All Logo" id="logo"></img>
+                    <img
+                        onClick={openMenuHandler}
+                        src={logo}
+                        alt="Space for All Logo"
+                        id="logo"
+                    ></img>
                 </Link>
             </h1>
             {open ? (
@@ -103,7 +108,6 @@ const StyledNav = styled.nav`
     z-index: 100;
     a {
         color: var(--blue);
-        /* text-shadow: black 0px 0px 5px; */
         text-decoration: none;
         :hover {
             color: var(--green) !important;
@@ -118,7 +122,6 @@ const StyledNav = styled.nav`
         position: absolute;
         top: 81.5px;
         width: 100%;
-        /* border: 15px double #b1e4b8; */
         box-shadow: 0 0 5px black;
         background-color: var(--d-blueish);
         justify-content: center;
@@ -128,7 +131,6 @@ const StyledNav = styled.nav`
     li {
         font-size: 1.3rem;
         letter-spacing: 1.5px;
-        /* font-weight: 700; */
         width: 50%;
         margin: auto;
         text-align: center;
