@@ -88,13 +88,27 @@ Colour was also an incredibly important part of the design considerations consid
 
 ### Features
 * Logo - The custom logo of the project displays in the top left hands side of the header and the bottom left of the footer.
+
+    ![Logo](/space4all/src/static/images/readme-images/logo-readme.png)
+    ![Logo](/space4all/src/static/images/readme-images/logo-text-readme.png)
 * Header - A persistant header that contains the navbar.
+    * Nav Bar - A list of all the available pages on the site which hihlights the current page with an underline animation.
+    ![Nav Bar](/space4all/src/static/images/readme-images/navbar.png)
+    * Mobile Nav - On medium and small screen the navbar logo changes to take up more real estate on the header and the list changes the a hamburger icon. When pressed the hamburger reveals a dropdown menu with the list of pages vertically.
+    ![Mobile Nav](/space4all/src/static/images/readme-images/mobile-nav.png)
+        * Dropdown - Vertical list of the available pages
+        ![Dropdown](/space4all/src/static/images/readme-images/dropdown.png)
 * Footer (LinkedIn, GitHub, Logo) - The names of the contributors of this repo that creates a new tab with the linkedn profile of the corresponding contributor.
+![Footer](/space4all/src/static/images/readme-images/footer.png)
 * Icons -  A github Icon in the footer creates a new tab to the repo of this project.
-* Nav Bar - A list of all the available pages on the site which hihlights the current page with an underline animation.
-* Mobile Nav - On medium and small screen the navbar logo changes to take up more real estate on the header and the list changes the a hamburger icon. When pressed the hamburger reveals a dropdown menu with the list of pages vertically.
+
+    ![Icons](/space4all/src/static/images/readme-images/github.png)
 * Accessibility Icon - Button for the user to adjust the the font size, highlight links and increase the size of the cursor.
+
+    ![Accessibility Icon](/space4all/src/static/images/readme-images/accessibility.png)
 * Back to Top Button - Returns the user to the the top of the page.
+
+    ![Back to Top Button](/space4all/src/static/images/readme-images/back-to-top.png)
 
 ## Future Implementations
 * Interactive office map - drag and drop to design own office.
