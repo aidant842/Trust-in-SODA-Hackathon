@@ -22,7 +22,10 @@ const Page3 = () => {
                 width="50%"
             />
             <HR />
-            <TextWithHeader heading="Is your work place accessible and inclusive for the following types of disability?" text="Use the chcklist below to help identify the areas that you could improve and design considerations you could implement to improve the inclusiveness of your work space." />
+            <TextWithHeader
+                heading="Is your work place accessible and inclusive for the following types of disability?"
+                text="Use the checklist below to help identify the areas that you could improve and design considerations you could implement to improve the inclusiveness of your work space."
+            />
             <Checklist />
         </>
     );
