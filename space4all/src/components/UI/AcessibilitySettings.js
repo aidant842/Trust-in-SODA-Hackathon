@@ -9,6 +9,9 @@ import Button from "./Button";
 //Framer Motion
 import { motion } from "framer-motion";
 
+//Custom Hooks
+import useWindowDimensions from "../../Hooks/useWindowDimenstions";
+
 const AcessibilitySettings = ({
     showSettingsHandler,
     resetSettingsHandler,
@@ -19,10 +22,15 @@ const AcessibilitySettings = ({
     highlightLinks,
     largeCursor,
 }) => {
+    const { screenWidth } = useWindowDimensions();
     return (
         <StyledPopOut
+            width={screenWidth}
             initial={{ width: 0, opacity: 0 }}
-            animate={{ width: 500, opacity: 1 }}
+            animate={{
+                width: screenWidth <= 768 ? "100%" : "500px",
+                opacity: 1,
+            }}
             exit={{ width: 0, opacity: 0 }}
             transition={{ delay: 0.15 }}
         >
@@ -53,8 +61,8 @@ const AcessibilitySettings = ({
                         type="checkbox"
                         name="links"
                         id="links"
-                        checked={highlightLinks}
                         onClick={highlightLinksHandler}
+                        checked={highlightLinks}
                     />
                 </div>
                 <div className="form-group">
@@ -63,8 +71,8 @@ const AcessibilitySettings = ({
                         type="checkbox"
                         name="cursor"
                         id="cursor"
-                        checked={largeCursor}
                         onClick={largeCursorHandler}
+                        checked={largeCursor}
                     />
                 </div>
             </form>
@@ -77,7 +85,7 @@ const StyledPopOut = styled(motion.div)`
     right: 0;
     top: 0;
     height: 100%;
-    width: 500px;
+    width: ${(props) => (props.width >= 768 ? "100%" : "500px")};
     background-color: var(--d-blueish);
     padding: 2rem;
     text-align: center;

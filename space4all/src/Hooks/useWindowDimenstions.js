@@ -4,11 +4,11 @@ const useWindowDimensions = () => {
     const hasWindow = typeof window !== "undefined";
 
     const getWindowDimensions = useCallback(() => {
-        const width = hasWindow ? window.innerWidth : null;
-        const height = hasWindow ? window.innerHeight : null;
+        const screenWidth = hasWindow ? window.innerWidth : null;
+        const screenHeight = hasWindow ? window.innerHeight : null;
         return {
-            width,
-            height,
+            screenWidth,
+            screenHeight,
         };
     }, [hasWindow]);
 
