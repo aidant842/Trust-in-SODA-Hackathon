@@ -29,12 +29,6 @@ const Page1 = () => {
                     At an early stage in recruitment it is important to highlight how issues relating to inclusion, disabilities, be it physical or neurodivergent are managed to ensure a positive experience in the world place.
                     Highlighting services, structures and resources that are implemented in the company shows the interest in the employee experience."
                 />
-                {/* <Image
-                    imageSrc={logo}
-                    altText="Logo"
-                    height="50px"
-                    width="50px"
-                /> */}
             </SplitContainer>
 
             <HR />
@@ -42,7 +36,7 @@ const Page1 = () => {
             <SplitContainer>
                 <Image
                     imageSrc={inclusionDiversityWorkplace}
-                    altText="Logo"
+                    altText="Cartoon image depicting numerous different people working, from diverse backgrounds."
                     height="auto"
                     width="100%"
                 />
@@ -86,19 +80,19 @@ const Page1 = () => {
             <SplitContainer>
                 <Image
                     imageSrc={diversity}
-                    altText="Logo"
+                    altText="Image containing the Oxford Dictionary definition of diversity."
                     height="auto"
                     width={width >= 1300 ? "100%" : "85%"}
                 />
                 <Image
                     imageSrc={inclusion}
-                    altText="Logo"
+                    altText="Image containing the Oxford Dictionary definition of inclusion."
                     height="auto"
                     width={width >= 1300 ? "100%" : "85%"}
                 />
                 <Image
                     imageSrc={equality}
-                    altText="Logo"
+                    altText="Image containing the Oxford Dictionary definition of equality."
                     height="auto"
                     width={width >= 1300 ? "100%" : "85%"}
                 />
@@ -107,7 +101,7 @@ const Page1 = () => {
             <SplitContainer>
                 <Image
                     imageSrc={benefitsHomepage}
-                    altText="Logo"
+                    altText="Icon image of a bar chart to depict increasing business and productivity and represent the statistics below."
                     height="auto"
                     width={width >= 1300 ? "100%" : "85%"}
                 />
@@ -128,7 +122,7 @@ const Page1 = () => {
                     ]}
                 />
             </SplitContainer>
-            
+
             <TextWithHeader
                     heading=""
                     text="Below we highlight ways to create an invlusive workspaceother than the physical space which are addressed in the Design and Accessories pages of the site."

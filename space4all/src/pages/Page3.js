@@ -17,7 +17,7 @@ const Page3 = () => {
             <TextWithHeader heading="Inclusive Office Checklist" text="" />
             <Image
                 imageSrc={checklistImg}
-                altText="Logo"
+                altText="An icon image depicting a clipboard with a checklist on it."
                 height="auto"
                 width="50%"
             />
