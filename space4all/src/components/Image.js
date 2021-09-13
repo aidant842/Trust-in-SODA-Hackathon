@@ -4,7 +4,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Image = (props) => {
-    const { imageSrc, altText, height, width, margin } = props;
+    const { imageSrc, altText, height, width, margin, ariaLabel } = props;
     return (
         <StyledImageContainer margin={margin}>
             <StyledImage
@@ -12,6 +12,7 @@ const Image = (props) => {
                 alt={altText}
                 height={height}
                 width={width}
+                aria-label={ariaLabel}
             />
         </StyledImageContainer>
     );

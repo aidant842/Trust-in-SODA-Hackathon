@@ -8,9 +8,9 @@ import SplitContainer from "../UI/SplitContainer";
 import styled from "styled-components";
 
 const ProductCard = (props) => {
-    const { imageSrc, altText, imgWidth, imgHeight, heading, text } = props;
+    const { imageSrc, altText, imgWidth, imgHeight, heading, text, ariaLabel } = props;
     return (
-        <StyledCard>
+        <StyledCard aria-label={ariaLabel}>
             <SplitContainer>
                 <Image
                     imageSrc={imageSrc}

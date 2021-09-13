@@ -33,6 +33,7 @@ const Page4 = () => {
                 altText="A banner displaying all of the different accessories and products listed in more detail below."
                 width={screenWidth >= 768 ? "50%" : "80%"}
                 height="auto"
+                ariaLabel="A banner displaying all of the different accessories and products listed in more detail below."
             />
             <HR />
             <TextWithHeader
@@ -45,6 +46,7 @@ const Page4 = () => {
                         key={index}
                         imageSrc={product.imageSrc}
                         altText={product.altText}
+                        ariaLabel={product.ariaLabel}
                         imgWidth={product.imgWidth}
                         imgHeight={product.imgHeight}
                         heading={product.heading}

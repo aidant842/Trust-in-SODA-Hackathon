@@ -4,7 +4,7 @@ import React from "react";
 import styled from "styled-components";
 
 const ImageWithHeader = (props) => {
-    const { imageSrc, altText, height, width, heading, text } = props;
+    const { imageSrc, altText, height, width, heading, text, ariaLabel } = props;
     return (
         <StyledImageContainer>
             <h4>{heading}</h4>
@@ -13,6 +13,7 @@ const ImageWithHeader = (props) => {
                 alt={altText}
                 height={height}
                 width={width}
+                aria-label={ariaLabel}
             />
             <p>{text}</p>
         </StyledImageContainer>

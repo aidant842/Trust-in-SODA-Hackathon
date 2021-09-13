@@ -45,7 +45,7 @@ const Page2 = () => {
             exit="exit"
         >
             <h4>Creating an Inclusive and Accessible Office Space</h4>
-            <SplitContainer breakpoint="576px">
+            <SplitContainer ariaLabel="Three images to begin outlining the good and poor practices of an accessible workspace" breakpoint="576px">
                 <Image
                     imageSrc={good}
                     altText="A smiley face with the word 'good' beneath"
@@ -73,7 +73,7 @@ const Page2 = () => {
                 heading="Design Considerations"
                 text="It is important that the working environment is accessible for all employees. Whilst there are many things that companies can do to help create an inclusive environment such as flexible working options, good insurance, and creating a diverse and inclusive culture, the physical environment is just as important. Below are some important design considerations for an office space to ensure that the majority of employees can enjoy a safe, accessible and positive working environment."
             />
-            <SplitContainer breakpoint="576px">
+            <SplitContainer ariaLabel="Three images and paragraphs explaining the benifits of accessible corridoors, ramps and doorhandles" breakpoint="576px">
                 <ImageWithHeader
                     imageSrc={corridoor}
                     altText="An icon image depicting a corridor."
@@ -99,7 +99,7 @@ const Page2 = () => {
                     text="Open access rooms, or automatic doors are the ideal design solution for entrances and exits to rooms and buildings. Where these cannot be implemented, suitable door handles should be placed and clearly labelled whether they are push and pull. They should be set to a height suitable for wheelchair users and accessible for those with limited dexterity, for example lever door handles instead of knobs."
                 />
             </SplitContainer>
-            <SplitContainer breakpoint="576px">
+            <SplitContainer ariaLabel="Three images and paragraphs explaining the benifits of accessible lighting, braille and quiet enviorment" breakpoint="576px">
                 <ImageWithHeader
                     imageSrc={lighting}
                     altText="An icon image depicting a lamp."
@@ -125,7 +125,7 @@ const Page2 = () => {
                     text="Quiet, peaceful, and private areas should be accessible within the work premises. This allows for employees to have a restful and peaceful area to go to if they are suffering from sensory overload but can also be used as a place for quiet reflection and private religious use such as praying."
                 />
             </SplitContainer>
-            <SplitContainer breakpoint="576px">
+            <SplitContainer ariaLabel="Three images and paragraphs explaining the benifits of accessible furniture, lifts and toilets" breakpoint="576px">
                 <ImageWithHeader
                     imageSrc={furniture}
                     altText="An icon image depicting a range of office furniture including a desk, chair, computer, and lamp."
@@ -151,7 +151,7 @@ const Page2 = () => {
                     text="Toilets should always be available and accessible to all colleagues with appropriate access and privacy. You could opt for unisex toilets to allow for all gender identities to be comfortable or split them into the traditional binary male and female options. Disabled toilets should be available at any place of work with an emergency lever cord for them to be able to pull for assistance or in case of an emergency."
                 />
             </SplitContainer>
-            <SplitContainer breakpoint="576px">
+            <SplitContainer ariaLabel="Three images and paragraphs explaining the benifits of accessible decor, desks and parking" breakpoint="576px">
                 <ImageWithHeader
                     imageSrc={decor}
                     altText="An icon image depicting a paint roller decorating on a wall to represent décor."
