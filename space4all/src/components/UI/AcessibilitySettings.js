@@ -21,6 +21,8 @@ const AcessibilitySettings = ({
     largeCursorHandler,
     highlightLinks,
     largeCursor,
+    darkModeHandler,
+    darkMode,
 }) => {
     const { screenWidth } = useWindowDimensions();
     return (
@@ -75,6 +77,16 @@ const AcessibilitySettings = ({
                         checked={largeCursor}
                     />
                 </div>
+                <div className="form-group">
+                    <label htmlFor="darkMode">Dark Mode</label>
+                    <input
+                        type="checkbox"
+                        name="darkMode"
+                        id="darkMode"
+                        onClick={darkModeHandler}
+                        checked={darkMode}
+                    />
+                </div>
             </form>
         </StyledPopOut>
     );
@@ -91,7 +103,6 @@ const StyledPopOut = styled(motion.div)`
     text-align: center;
     z-index: 9999;
     color: white;
-    /* border-left: 1px solid var(--green); */
     box-shadow: 0 0 10px black;
 
     .btns {

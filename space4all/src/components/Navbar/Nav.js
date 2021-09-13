@@ -14,7 +14,6 @@ const Nav = () => {
     const { pathname } = useLocation();
     // variables
 
-    const green = "#BDD9C0";
     const blue = "#507c8d";
     const dblueish = "#2a4147";
 
