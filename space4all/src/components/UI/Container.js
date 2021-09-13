@@ -7,7 +7,7 @@ const Container = (props) => {
 const StyledContainer = styled.div`
     width: 85%;
     text-align: center;
-    margin: 0 auto;
+    margin: 4rem auto;
 `;
 
 export default Container;
