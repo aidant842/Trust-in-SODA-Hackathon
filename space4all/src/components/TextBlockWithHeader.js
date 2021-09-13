@@ -4,10 +4,10 @@ import React from "react";
 import styled from "styled-components";
 
 const TextBlockWithHeader = (props) => {
-    const { heading, text, className, resources } = props;
+    const { heading, text, className, resources, ariaLabel } = props;
 
     return (
-        <StyledTextBlock className={className}>
+        <StyledTextBlock className={className} aria-label={ariaLabel}>
             <h4>{heading}</h4>
             <p>{text}</p>
             {resources ? (

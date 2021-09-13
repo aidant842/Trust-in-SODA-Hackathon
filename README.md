@@ -89,7 +89,7 @@ Colour was also an incredibly important part of the design considerations consid
 ### Features
 * Logo - The custom logo of the project displays in the top left hands side of the header and the bottom left of the footer.  Numerous different logos were created, at different sizes dependent on usage. A play was made on the word ‘space’ intentionally making it wider with a larger kerring/spacing value. The icon is made up of wheelchair symbol, the eye for visual and with the head of the person is a settings icon to recognise neuro. The font used is Atkinson Hyperlegible from the Braille Institute. Colour palette based on colour blind reaseach.
 
-![Logo Without Text](/space4all/src/static/images/logo.png)  
+![Logo Without Text](/space4all/src/static/images/readme-images/logo-bg.png)  
 
 ![Logo Header](/space4all/src/static/images/logo-title.png)  
 
@@ -125,6 +125,8 @@ Colour was also an incredibly important part of the design considerations consid
 * Checklist - This page is for companies to utilise as an **interactive tool** to check to see if their office space and working environment is inclusive to the **8 types of disabilities** listed below it. It would be nice to expand this page in the future using dropdowns to provide examples of disabilities in each category as well as the different dfesign considerations that could help make it accessible for those users.  
 * Accessories - This page starts with an **accessories header image** which contians mini icons of some of the accessories listed below. Whilst page 2 consisted of physical design ideas, the Accessories page looks at the **accessories and furniture** that could make an office space more inclusive for someone. Each product is within a highlighted box to improvie legibility. In the future, it would be nice if these **linked to online stores** for purchasing. 
 
+    ![Back to Top Button](/space4all/src/static/images/readme-images/back-to-top.png)
+
 ## Future Implementations
 * Interactive office map - drag and drop to design own office.
 * Good versus bad office image that could be hovered over and highlight good and bad elements that are on display in the image.
@@ -134,14 +136,16 @@ Colour was also an incredibly important part of the design considerations consid
 
 Below is listed the programming languages, technologies, frameworks and resources used for this project.
 
--   **HTML5**
+-   **JSX**
+-   **React**
+-   **NPM**
 -   **CSS3**
 -   **Vanilla JS**
--   **J Query**
 -   **Markdown**
 -   **Git** for version control.
 -   **[Github](https://github.com/)** to hold my project.
 -   **[FontAwesome](https://fontawesome.com/)** for icons.
+-   **[ReactIcons](https://react-icons.github.io/react-icons/)** for icons.
 -   **Google Chrome/FireFox/Edge/Safari**
 -   **Developer tools for chrome/FireFox/Edge**
 -   **[Amiresponsive](http://ami.responsivedesign.is/)**
@@ -157,7 +161,6 @@ Below is listed the programming languages, technologies, frameworks and resource
 -   [CSS validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
 -   [JsHint](https://jshint.com)
 -   Testing [checklist](https://geteasyqa.com/qa/test-website/)
--   [pep8](http://pep8online.com/)
 
 ### Lighthouse Reports
 We ran a lighthouse report for each page and worked consistently to try to identify anything causing the score to be lowered and altered the pages as we went to ensure we maximised the report results.
