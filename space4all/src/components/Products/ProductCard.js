@@ -8,7 +8,8 @@ import SplitContainer from "../UI/SplitContainer";
 import styled from "styled-components";
 
 const ProductCard = (props) => {
-    const { imageSrc, altText, imgWidth, imgHeight, heading, text, ariaLabel } = props;
+    const { imageSrc, altText, imgWidth, imgHeight, heading, text, ariaLabel } =
+        props;
     return (
         <StyledCard aria-label={ariaLabel}>
             <SplitContainer>
@@ -33,7 +34,6 @@ const StyledTextWithHeader = styled(TextBlockWithHeader)`
 const StyledCard = styled.div`
     display: flex;
     width: 100%;
-    /* max-height: 300px; */
     margin: 4rem 0;
     border-radius: 10px;
     box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.35);
