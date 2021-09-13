@@ -6,6 +6,7 @@ import TextBlockWithHeader from "../components/TextBlockWithHeader";
 import Image from "../components/Image";
 import SplitContainer from "../components/UI/SplitContainer";
 import HR from "../components/UI/HR";
+import Video from "../components/Video";
 
 //Images
 import diversity from "../static/images/diversity.png";
@@ -29,6 +30,7 @@ const Page1 = () => {
                     At an early stage in recruitment it is important to highlight how issues relating to inclusion, disabilities, be it physical or neurodivergent are managed to ensure a positive experience in the world place.
                     Highlighting services, structures and resources that are implemented in the company shows the interest in the employee experience."
                 />
+                <Video videoSrc="https://www.youtube.com/embed/cX9Z0Qr5e74" />
             </SplitContainer>
 
             <HR />
