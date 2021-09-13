@@ -37,7 +37,7 @@ export const Products = [
         imgWidth: "50%",
         imgHeight: "auto",
         heading: "Ramps",
-        text: "Install ramps where stairs and steps exist.",
+        text: "Install ramps where stairs and steps exist. Gradients should be kept to a minimum. The preferred gradient is 1:20, with individual sections no longer than 10 metres and a maximum climb of 500mm. After each 10m slope, intermediate landings should be provided. Providing gradients will aid those with physical disabilities. When attending outings outside of company grounds portable ramps can be taken.",
     },
     {
         imageSrc: digitalBrowser,
