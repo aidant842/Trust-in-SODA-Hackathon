@@ -87,13 +87,14 @@ Colour was also an incredibly important part of the design considerations consid
 ![Colour Palette](/space4all/src/static/images/readme-images/palette.jpg)
 
 ### Features
-* Logo
-* Header
-* Footer (LinkedIn, GitHub, Logo)
-* Icons
-* Nav Bar (Hamburger)
-* Accessibility Icon
-* Back to Top
+* Logo - The custom logo of the project displays in the top left hands side of the header and the bottom left of the footer.
+* Header - A persistant header that contains the navbar.
+* Footer (LinkedIn, GitHub, Logo) - The names of the contributors of this repo that creates a new tab with the linkedn profile of the corresponding contributor.
+* Icons -  A github Icon in the footer creates a new tab to the repo of this project.
+* Nav Bar - A list of all the available pages on the site which hihlights the current page with an underline animation.
+* Mobile Nav - On medium and small screen the navbar logo changes to take up more real estate on the header and the list changes the a hamburger icon. When pressed the hamburger reveals a dropdown menu with the list of pages vertically.
+* Accessibility Icon - Button for the user to adjust the the font size, highlight links and increase the size of the cursor.
+* Back to Top Button - Returns the user to the the top of the page.
 
 ## Future Implementations
 * Interactive office map - drag and drop to design own office.
