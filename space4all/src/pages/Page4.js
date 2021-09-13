@@ -7,7 +7,6 @@ import ProductCard from "../components/Products/ProductCard";
 import { Products } from "../components/Products/Products";
 
 // Images
-import logo from "../static/images/logo.png";
 import accessories_header from "../static/images/accessories_header.png";
 
 // Styled Components
