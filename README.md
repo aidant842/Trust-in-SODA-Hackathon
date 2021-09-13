@@ -180,7 +180,21 @@ Below is listed the programming languages, technologies, frameworks and resource
     * [People Management](https://www.peoplemanagement.co.uk/voices/comment/how-to-use-braille-signs-improve-accessibility-workplace#gref)
     * [Anuprayaas](https://anuprayaas.org/8-ways-to-make-a-workplace-accessible-disability-friendly/)
     * [Oxford Dictionary](https://www.oxfordlearnersdictionaries.com/)
-
+    * [Office Principles](https://officeprinciples.com/accessible-office-disability-workplace/)
+    * [Government Clinical Trials](https://clinicaltrials.gov/ct2/show/NCT03216512)
+    * [Smart Patients](https://www.smartpatients.com/trials/NCT03216512)
+    * [Rob Dodson's Youtube Video](https://www.youtube.com/watch?v=qpH7-KFWZRI&t=430s)
+* Images
+    * [Ink Factory Studio](https://inkfactorystudio.com/blog/drawing-diversity-and-why-it-matters/) - Image on Page 1 representing diversity.
+    * [Procreate](https://apps.apple.com/ie/app/procreate/id425073498) - Icon Image creation
+* Videos
+    * [SPIK](https://spik.ai/) - For text to voice video narration.
+    * [YouTube](https://www.youtube.com/) - Video Hosting
+    * [Splice](https://apps.apple.com/ie/app/splice-video-editor-maker/id409838725) - Video Editing
+* Files Management
+    * [WeTransfer](https://wetransfer.com/) - Cloud File Transfer
+* Font
+    * [Braille Institute](https://brailleinstitute.org/freefont)
 
 
 [Back to top ↑]()
