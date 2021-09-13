@@ -87,14 +87,37 @@ Colour was also an incredibly important part of the design considerations consid
 ![Colour Palette](/space4all/src/static/images/readme-images/palette.jpg)
 
 ### Features
-* Logo - The custom logo of the project displays in the top left hands side of the header and the bottom left of the footer.
-* Header - A persistant header that contains the navbar.
-* Footer (LinkedIn, GitHub, Logo) - The names of the contributors of this repo that creates a new tab with the linkedn profile of the corresponding contributor.
-* Icons -  A github Icon in the footer creates a new tab to the repo of this project.
-* Nav Bar - A list of all the available pages on the site which hihlights the current page with an underline animation.
-* Mobile Nav - On medium and small screen the navbar logo changes to take up more real estate on the header and the list changes the a hamburger icon. When pressed the hamburger reveals a dropdown menu with the list of pages vertically.
-* Accessibility Icon - Button for the user to adjust the the font size, highlight links and increase the size of the cursor.
-* Back to Top Button - Returns the user to the the top of the page.
+* Logo - The custom logo of the project displays in the top left hands side of the header and the bottom left of the footer.  Numerous different logos were created, at different sizes dependent on usage. A play was made on the word ‘space’ intentionally making it wider with a larger kerring/spacing value. The icon is made up of wheelchair symbol, the eye for visual and with the head of the person is a settings icon to recognise neuro. The font used is Atkinson Hyperlegible from the Braille Institute. Colour palette based on colour blind reaseach.
+
+![Logo Without Text](/space4all/src/static/images/logo.png)  
+
+![Logo Header](/space4all/src/static/images/logo-title.png)  
+
+![Logo With Text Throughout](/space4all/src/static/images/logo-lg-text.png)  
+
+![Logo With Text Beneath](/space4all/src/static/images/logo-lg-icon.png)  
+
+* Header/Nav Bar - A persistant header that contains the navbar. The NavBar contains a list of all the available pages on the site which hihlights the current page with an underline animation.
+
+![Header](/space4all/src/static/images/readme-images/header.png) 
+
+* Footer (LinkedIn, GitHub, Logo) - The names of the contributors of this repo that creates a new tab with the linkedn profile of the corresponding contributor. The central github icon in the footer then creates a new tab directed to the repo of the project. 
+
+![Footer](/space4all/src/static/images/readme-images/footer.png) 
+
+* Mobile Nav - On medium and small screen the navbar logo changes to take up more real estate on the header and the list changes the a hamburger icon. When pressed the hamburger reveals a dropdown menu with the list of pages vertically.  
+
+![Mobile Nav Bar](/space4all/src/static/images/readme-images/mobile-header.png)  
+![Mobile Nav Bar With Dropdown](/space4all/src/static/images/readme-images/mobile-header-dropdown.png)  
+
+* Accessibility Icon - Button for the user to adjust the the font size, highlight links and increase the size of the cursor.  
+
+![Accessibility Icon](/space4all/src/static/images/readme-images/accessibility-icon.png)   
+![Accessibility Menu](/space4all/src/static/images/readme-images/accessibility-menu.png)  
+
+* Back to Top Button - Returns the user to the the top of the page. This button remains at the bottom right of the page at all times.  
+
+![Back To Top Button](/space4all/src/static/images/readme-images/back-to-top.png) 
 
 ## Future Implementations
 * Interactive office map - drag and drop to design own office.
