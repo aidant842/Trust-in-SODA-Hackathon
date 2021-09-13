@@ -12,10 +12,21 @@ import accessories_header from "../static/images/accessories_header.png";
 
 // Styled Components
 import styled from "styled-components";
+
+//Custom Hooks
+
+import useWindowDimensions from "../Hooks/useWindowDimenstions";
+
 const Page4 = () => {
+    const { width } = useWindowDimensions();
     return (
         <>
-            <Image imageSrc={accessories_header} altText="A banner displaying all of the different accessories and products listed in more detail below." width="80%" height="auto" />
+            <Image
+                imageSrc={accessories_header}
+                altText="A banner displaying all of the different accessories and products listed in more detail below."
+                width={width >= 768 ? "50%" : "80%"}
+                height="auto"
+            />
             <HR />
             <TextWithHeader
                 heading="RESOURCES AND ACCESSORIES"
@@ -25,7 +36,6 @@ const Page4 = () => {
                 return (
                     <ProductCard
                         key={index}
-                        url={product.url}
                         imageSrc={product.imageSrc}
                         altText={product.altText}
                         imgWidth={product.imgWidth}
