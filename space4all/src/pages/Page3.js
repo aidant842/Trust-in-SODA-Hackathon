@@ -20,6 +20,7 @@ const Page3 = () => {
                 altText="An icon image depicting a clipboard with a checklist on it."
                 height="auto"
                 width="50%"
+                ariaLabel="An icon image depicting a clipboard with a checklist on it."
             />
             <HR />
             <TextWithHeader

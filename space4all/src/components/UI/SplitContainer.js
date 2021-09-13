@@ -3,9 +3,9 @@ import React from "react";
 //Styled Components
 import styled from "styled-components";
 
-const SplitContainer = ({ className, breakpoint, children }) => {
+const SplitContainer = ({ className, breakpoint, children, ariaLabel }) => {
     return (
-        <StyledHalfWidth className={className} breakpoint={breakpoint}>
+        <StyledHalfWidth aria-label={ariaLabel} className={className} breakpoint={breakpoint}>
             {children}
         </StyledHalfWidth>
     );
