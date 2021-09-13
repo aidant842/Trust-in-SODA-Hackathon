@@ -125,6 +125,8 @@ Colour was also an incredibly important part of the design considerations consid
 * Checklist - This page is for companies to utilise as an **interactive tool** to check to see if their office space and working environment is inclusive to the **8 types of disabilities** listed below it. It would be nice to expand this page in the future using dropdowns to provide examples of disabilities in each category as well as the different dfesign considerations that could help make it accessible for those users.  
 * Accessories - This page starts with an **accessories header image** which contians mini icons of some of the accessories listed below. Whilst page 2 consisted of physical design ideas, the Accessories page looks at the **accessories and furniture** that could make an office space more inclusive for someone. Each product is within a highlighted box to improvie legibility. In the future, it would be nice if these **linked to online stores** for purchasing. 
 
+    ![Back to Top Button](/space4all/src/static/images/readme-images/back-to-top.png)
+
 ## Future Implementations
 * Interactive office map - drag and drop to design own office.
 * Good versus bad office image that could be hovered over and highlight good and bad elements that are on display in the image.
