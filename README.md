@@ -145,10 +145,11 @@ Below is listed the programming languages, technologies, frameworks and resource
 -   **Google Chrome/FireFox/Edge/Safari**
 -   **Developer tools for chrome/FireFox/Edge**
 -   **[Amiresponsive](http://ami.responsivedesign.is/)**
--   **[W3Schools](https://www.w3schools.com/)** for help with some issues i ran into
--   **[StackOverFlow](https://stackoverflow.com/)** for help with some issues i ran into
+-   **[W3Schools](https://www.w3schools.com/)** for help with some issues we ran into
+-   **[StackOverFlow](https://stackoverflow.com/)** for help with some issues we ran into
 -   **[Slack](https://slack.com/)**
 -   **[Grammarly](https://www.grammarly.com/)** to correct grammar and spelling mistakes.
+-   **[Firebase](https://firebase.google.com/)** Hosting the web app.
 
 ## Testing
 
@@ -158,10 +159,29 @@ Below is listed the programming languages, technologies, frameworks and resource
 -   Testing [checklist](https://geteasyqa.com/qa/test-website/)
 -   [pep8](http://pep8online.com/)
 
+### Lighthouse Reports
+We ran a lighthouse report for each page and worked consistently to try to identify anything causing the score to be lowered and altered the pages as we went to ensure we maximised the report results.
 
 ## Deployment
+This project was developed in numerous different IDEs where everything was committed and pushed to [GitHub Repository](https://github.com/aidant842/Trust-in-SODA-Hackathon). The Code Institute offered a template which could then be pulled and used for the main structure of the repository, and created into a [GitPod](https://gitpod.io/) repository by clicking the green "GitPod" button. Please see the process followed below for deployment after the repository had been created:
+1. Create a [Firebase](https://firebase.google.com/) project.
+2. Select "hosting" then "get started".
+3. In the root of local directory: "firebase init hosting:github"
+4. firebase Deploy in workspace on merge.
+NOTE: Be sure to use "npm install" and "npm start" where required for appropriate installations and preview.
 
-### Local Deployment
+### Local Deployment / Clone in GitPod
+Once you have a [GitHub](https://github.com/) account and installed the [GitPod Chrome Extension](https://www.gitpod.io/docs/browser-extension/) follow the steps below to clone this project into your own repository:
+
+1. Log in to your [GitPod](https://gitpod.io/) account.
+2. Open the [GitHub Repository](https://github.com/aidant842/Trust-in-SODA-Hackathon) in a new tab.
+3. Click on the green "GitPod" button to the top right of the project.
+4. This will automatically create a new GitPod workspace for you to work on. You can type in any name of your choosing.
+5. Terminal Commands:
+    1. git pull origin main
+    2. npm install
+    3. npm start
+6. You can then preview changes in browser.
 
 ## Credits / Acknowledgements
 * Colour Palette Creation - [Allana Bailey's Colour-Blind-Project](https://github.com/allanabailey/color-blind-project1)
