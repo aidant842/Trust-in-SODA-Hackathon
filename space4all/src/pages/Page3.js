@@ -11,9 +11,18 @@ import Checklist from "../components/Checklist/Checklist";
 //Images
 import checklistImg from "../static/images/checklist.png";
 
+//Animations
+import { pageAnimation } from "../components/animation";
+import { motion } from "framer-motion";
+
 const Page3 = () => {
     return (
-        <>
+        <motion.div
+            variants={pageAnimation}
+            initial="hidden"
+            animate="show"
+            exit="exit"
+        >
             <TextWithHeader heading="Inclusive Office Checklist" text="" />
             <Image
                 imageSrc={checklistImg}
@@ -27,7 +36,7 @@ const Page3 = () => {
                 text="Use the checklist below to help identify the areas that you could improve and design considerations you could implement to improve the inclusiveness of your work space."
             />
             <Checklist />
-        </>
+        </motion.div>
     );
 };
 

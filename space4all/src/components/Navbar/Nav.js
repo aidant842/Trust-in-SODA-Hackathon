@@ -10,17 +10,16 @@ import { motion } from "framer-motion";
 //nav links
 import { MenuItems } from "./MenuItems";
 
-const Nav = () => {
+const Nav = ({ bttHandler }) => {
     const { pathname } = useLocation();
     // variables
-
     const blue = "#507c8d";
     const dblueish = "#2a4147";
 
     return (
         <StyledNav>
             <h1>
-                <Link id="logo" to="/">
+                <Link id="logo" to="/" onClick={bttHandler}>
                     <img src={logo} alt="Space for All Logo" id="logo"></img>
                 </Link>
             </h1>
@@ -34,6 +33,7 @@ const Nav = () => {
                                     color:
                                         pathname === item.to ? dblueish : blue,
                                 }}
+                                onClick={bttHandler}
                             >
                                 {item.title}
                             </Link>

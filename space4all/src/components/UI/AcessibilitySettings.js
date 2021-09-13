@@ -63,7 +63,7 @@ const AcessibilitySettings = ({
                         type="checkbox"
                         name="links"
                         id="links"
-                        onClick={highlightLinksHandler}
+                        onChange={highlightLinksHandler}
                         checked={highlightLinks}
                     />
                 </div>
@@ -73,7 +73,7 @@ const AcessibilitySettings = ({
                         type="checkbox"
                         name="cursor"
                         id="cursor"
-                        onClick={largeCursorHandler}
+                        onChange={largeCursorHandler}
                         checked={largeCursor}
                     />
                 </div>
@@ -83,7 +83,7 @@ const AcessibilitySettings = ({
                         type="checkbox"
                         name="darkMode"
                         id="darkMode"
-                        onClick={darkModeHandler}
+                        onChange={darkModeHandler}
                         checked={darkMode}
                     />
                 </div>
