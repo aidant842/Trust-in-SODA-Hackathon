@@ -22,7 +22,7 @@ const Page1 = () => {
     const { screenWidth } = useWindowDimensions();
     return (
         <>
-            <SplitContainer>
+            <SplitContainer ariaLabel="A paragraph and video about how to address accessibility in the workplace">
                 <TextWithHeader
                     heading="Addressing Workplace Accessibility"
                     text="space4ALL promotes awareness and provides solutions to enhance accessibility through diversity, inclusion and equality in the workplace environment. 
@@ -35,7 +35,7 @@ const Page1 = () => {
 
             <HR />
 
-            <SplitContainer>
+            <SplitContainer ariaLabel="An image depicting numerous different people working, from diverse backgrounds.">
                 <Image
                     imageSrc={inclusionDiversityWorkplace}
                     altText="Cartoon image depicting numerous different people working, from diverse backgrounds."
@@ -79,12 +79,13 @@ const Page1 = () => {
 
             <HR />
 
-            <SplitContainer>
+            <SplitContainer ariaLabel="A serious of images outiling the Oxford Dictionary definition of diversity, inclusion and equality.">
                 <Image
                     imageSrc={diversity}
                     altText="Image containing the Oxford Dictionary definition of diversity."
                     height="auto"
                     width={screenWidth >= 1300 ? "100%" : "85%"}
+                    ariaLabel="dsafsdafds"
                 />
                 <Image
                     imageSrc={inclusion}
@@ -100,7 +101,7 @@ const Page1 = () => {
                 />
             </SplitContainer>
             <HR />
-            <SplitContainer>
+            <SplitContainer ariaLabel="An image and paragrpah presenting the benifits of an inclusive workforce and how it can increase productivity">
                 <Image
                     imageSrc={benefitsHomepage}
                     altText="Icon image of a bar chart to depict increasing business and productivity and represent the statistics below."

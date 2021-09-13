@@ -10,6 +10,7 @@ export const Products = [
     {
         imageSrc: readingGuideRuler,
         altText: "An icon image of a book open as if being read.",
+        ariaLabel: "An icon image of a book open as if being read.",
         imgWidth: "50%",
         imgHeight: "auto",
         heading: "Reading Guide Ruler",
@@ -18,6 +19,7 @@ export const Products = [
     {
         imageSrc: headphones,
         altText: "An icon image of a pair of headphones.",
+        ariaLabel: "An icon image of a pair of headphones.",
         imgWidth: "50%",
         imgHeight: "auto",
         heading: "Headphones",
@@ -26,6 +28,7 @@ export const Products = [
     {
         imageSrc: furniture,
         altText: "An icon image of a work station with a chair, desk and lamp.",
+        ariaLabel: "An icon image of a work station with a chair, desk and lamp.",
         imgWidth: "50%",
         imgHeight: "auto",
         heading: "Ergonomic Furniture",
@@ -34,6 +37,7 @@ export const Products = [
     {
         imageSrc: ramp,
         altText: "An icon image depicting a ramp.",
+        ariaLabel: "An icon image depicting a ramp.",
         imgWidth: "50%",
         imgHeight: "auto",
         heading: "Ramps",
@@ -41,8 +45,8 @@ export const Products = [
     },
     {
         imageSrc: digitalBrowser,
-        altText:
-            "An icon image depicting a computer screen with a software icon on it.",
+        altText: "An icon image depicting a computer screen with a software icon on it.",
+        ariaLabel: "An icon image depicting a computer screen with a software icon on it.",
         imgWidth: "50%",
         imgHeight: "auto",
         heading: "Digital Workstation",
@@ -50,8 +54,8 @@ export const Products = [
     },
     {
         imageSrc: employeeHandbook,
-        altText:
-            "An icon image depicting a book with the title 'Employee Accessibility Handbook'.",
+        altText: "An icon image depicting a book with the title 'Employee Accessibility Handbook'.",
+        ariaLabel: "An icon image depicting a book with the title 'Employee Accessibility Handbook'.",
         imgWidth: "50%",
         imgHeight: "auto",
         heading: "Access Handbook",
@@ -59,8 +63,8 @@ export const Products = [
     },
     {
         imageSrc: braille,
-        altText:
-            "An icon image depicting a sign with the braille format beneath.",
+        altText:"An icon image depicting a sign with the braille format beneath.",
+        ariaLabel: "An icon image depicting a sign with the braille format beneath.",
         imgWidth: "50%",
         imgHeight: "auto",
         heading: "Braille Stickers / Plates",
