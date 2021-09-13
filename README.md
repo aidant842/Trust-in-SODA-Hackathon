@@ -117,12 +117,18 @@ Colour was also an incredibly important part of the design considerations consid
 
 * Back to Top Button - Returns the user to the the top of the page. This button remains at the bottom right of the page at all times.  
 
-![Back To Top Button](/space4all/src/static/images/readme-images/back-to-top.png) 
+![Back To Top Button](/space4all/src/static/images/readme-images/back-to-top.png)
+
+### Pages
+* Home - The home page consists of generic **information and definitions** about inclusion, diversity and equality. The introduction starts with information about what they are and why **it is important** followed by a sectionw tih regards to the **benefits of having a diverse workforce**. Beneath this there is a list of bullet points highlighting the **ways companies can create an inclusive working environment** other than the physical design of the office space as investigated in the second page.  
+* Design - This page addressed the **physical design considerations** that companies should look at to ensure they are creating an accessible and inclusive working environment. In the place of **good vs bad images** there would be large interactive images of good and bad office design **highlighting elements** when a user hovered over them. However due to the time constraints of the project, this could not be achieved. The page then scrolls down to list **12 different physical design considerations** within the office such as lighting, floor space and lifts.  
+* Checklist - This page is for companies to utilise as an **interactive tool** to check to see if their office space and working environment is inclusive to the **8 types of disabilities** listed below it. It would be nice to expand this page in the future using dropdowns to provide examples of disabilities in each category as well as the different dfesign considerations that could help make it accessible for those users.  
+* Accessories - This page starts with an **accessories header image** which contians mini icons of some of the accessories listed below. Whilst page 2 consisted of physical design ideas, the Accessories page looks at the **accessories and furniture** that could make an office space more inclusive for someone. Each product is within a highlighted box to improvie legibility. In the future, it would be nice if these **linked to online stores** for purchasing. 
 
 ## Future Implementations
 * Interactive office map - drag and drop to design own office.
-* Good versus bad office image that could be hovewred over and highlight good and bad.
-* Create a shop with online resources so that accessible proucts could be bought on the site.
+* Good versus bad office image that could be hovered over and highlight good and bad elements that are on display in the image.
+* Create a shop with online resources so that accessible proucts could be bought on the site on the Accessories page.
 
 ## Technologies used
 
