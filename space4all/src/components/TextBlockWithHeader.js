@@ -12,7 +12,7 @@ const TextBlockWithHeader = (props) => {
             <p>{text}</p>
             {resources ? (
                 <StyledResourcesContainer>
-                    <h5>RESOURCES:</h5>
+                    <h5>Resources:</h5>
                     <ul>
                         {resources.map((resource, index) => {
                             return (

@@ -41,7 +41,7 @@ const Page1 = () => {
                     width="100%"
                 />
                 <TextWithHeader
-                    heading="WHAT IS WORKPLACE INCLUSION, DIVERSION AND EQUALITY?"
+                    heading="What is workplace inclusion, diversion and equality?"
                     text="Any dimension that can be utilized to distinguish groups and persons from one another is referred to be diversity. 
                     It is about empowering people by valuing and accepting their differences, such as age, gender, race, religion, disability, sexual orientation, education, and national origin.
                     Inclusion refers to an organizational endeavor and procedures in which different groups or individuals from various backgrounds are culturally and socially accepted, welcomed, and treated equally."
@@ -106,7 +106,7 @@ const Page1 = () => {
                     width={screenWidth >= 1300 ? "100%" : "85%"}
                 />
                 <TextWithHeader
-                    heading="BENEFITS OF A DIVERSE AND INCLUSIVE WORKFORCE"
+                    heading="Benefits of a diverse and inclusive workforce"
                     text="When taking the effort to address understanding, attitudes and areas of office surroundings to provide for disabilities both visible and hidden, the benefits to the individual and the firm are immense. 
                     Increased productivity and stress reduction are two of these advantages.
                     According to Boston Consulting Group data, firms with diverse teams have 19 percent higher revenue and beat industry standards by 35 percent (as revealed by McKinsey's research)."
@@ -124,8 +124,8 @@ const Page1 = () => {
             </SplitContainer>
 
             <TextWithHeader
-                    heading=""
-                    text="Below we highlight ways to create an invlusive workspaceother than the physical space which are addressed in the Design and Accessories pages of the site."
+                heading=""
+                text="Below we highlight ways to create an invlusive workspaceother than the physical space which are addressed in the Design and Accessories pages of the site."
             />
 
             <StyledUl>

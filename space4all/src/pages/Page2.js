@@ -35,7 +35,7 @@ const Page2 = () => {
 
     return (
         <>
-            <h2>Creating an Inclusive and Accessible Office Space</h2>
+            <h4>Creating an Inclusive and Accessible Office Space</h4>
             <SplitContainer breakpoint="576px">
                 <Image
                     imageSrc={good}
