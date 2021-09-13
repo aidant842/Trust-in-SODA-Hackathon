@@ -32,6 +32,7 @@ import styled from "styled-components";
 
 //Cursors
 import cursor from "./static/images/largeCursor.png";
+import pointer from "./static/images/largePointer.png";
 
 function App() {
     //Variables
@@ -142,6 +143,8 @@ const StyledApp = styled.div`
     a {
         background-color: ${(props) =>
             props.highlightLinks ? "yellow" : "none"};
+        cursor: ${(props) =>
+            props.largeCursor ? `url(${pointer}), auto` : "pointer"};
     }
 `;
 

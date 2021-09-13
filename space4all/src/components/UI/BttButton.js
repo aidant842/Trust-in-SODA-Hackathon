@@ -24,6 +24,7 @@ const StyledButton = styled(Button)`
     bottom: 50px;
     width: 50px;
     height: 50px;
+    cursor: pointer;
 
     &:hover {
         border: 1px solid var(--blue);
